@@ -1,0 +1,67 @@
+2) write the basic hello world program and practice the compilation instructions ,with and without -o option, and make some changes to code and generate error/warning messages.
+
+ 2) a.
+ $vim hello.c
+
+-----------------------------------------------------hello.c---------------------------------------------------------------------------------------------------
+#include< stdio .h>
+int main()
+{
+printf("hello world");
+return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+$gcc hello.c
+$ls
+>>>a.out hello.c
+
+$./a.out
+>>>hello world
+
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+2) b.
+$vim  string.c
+-----------------------------------------------------string.c----------------------------------------------------------------------------------------
+
+#include<stdio.h>
+int main()
+{
+printf("string constant");
+return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+$gcc string.c -o string.o
+$ls 
+>>>a.out hello.c string.c string.out
+$./string.out
+>>>string constant
+
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+2) c.Error
+
+$vim string.c
+------------------------------------------------------------------string.c-------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+printf("string constant")
+return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+$gcc string.c -o string.out
+$./string.out
+
+string.c: In function ‘main’:
+string.c:4:26: error: expected ‘;’ before ‘return’
+    4 | printf("string constant")
+      |                          ^
+      |                          ;
+    5 | return 0;
+      | ~~~~~~  
+      
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+      
