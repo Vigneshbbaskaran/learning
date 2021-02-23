@@ -1,7 +1,8 @@
-# km40besd01
+# KM40BESD01
 
 ## C-Basics
-## 22nd FEB 2021
+
+### Day-1 22nd FEB 2021
 
 1) Notedown all keywords 
 
