@@ -36,7 +36,7 @@ int main()
         printf("%d\n", temp);
         printf("%d\n", num);
 
-	printf("op4:\n%d\n", num);
+	printf("op4:\n%d\n", num);                      //op4
 	temp = num /10;
 	printf("%d\n", temp);
 	temp = num /100;
