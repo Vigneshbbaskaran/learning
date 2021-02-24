@@ -1,6 +1,6 @@
 # KM40BESD01
 
-## C-Basics
+# C-Basics
 
 ### Day-1: 22nd FEB 2021
 
