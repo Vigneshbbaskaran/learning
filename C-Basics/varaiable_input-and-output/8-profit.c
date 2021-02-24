@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int i,j, n;
+	int  n;
 	float  cp,sp,profit;
 	printf("Enter number of items:\n");
 	scanf("%d",&n);
