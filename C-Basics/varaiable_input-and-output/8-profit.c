@@ -10,7 +10,7 @@ int main()
 	scanf("%f",&sp);
 	printf("profit =");
     scanf("%f",&profit);
-    sp= sp/n
+    sp = sp/n
     profit = profit/n
 	cp = sp - profit;
     printf("cost price for entered item =%f\n", cp);
