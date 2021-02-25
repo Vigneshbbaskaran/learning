@@ -6,7 +6,7 @@ int main()
 	printf("enter a character number\n");
 	scanf("%c",&a);
 	printf("enter a character number\n");
-	scanf(" %c",&b);
+	scanf(" %c",&b); 
 	printf("enter a character number\n");
 	scanf(" %c",&c);
 	a1=a-48; 
