@@ -1,8 +1,8 @@
-# KM40BESD01 (ASSIGNMENT QUESTIONS)
+# KM40BESD01 
 
 # 'C' Programming Basics
-## Day-1: 22nd FEB 2021
 
+## Day-1: 22nd FEB 2021
 ### C-Basics
 
 **1)** Notedown all keywords 
@@ -11,7 +11,6 @@
 with and without -o option, and make some changes to code and generate error/warning messages.
 
 ## Day-2: 23rd FEB 2021
-
 ### Variables input & output
 
 **1)** List out the data types, their format specifiers. 
@@ -31,7 +30,6 @@ with and without -o option, and make some changes to code and generate error/war
 **8)**If sales price and profit of n items is given find the cost price of 1 item.
 
 ## Day-3: 24th FEB 2021
-
 ### Arithmetic operators
 
 **1)**"read a 4 digit number and print it in the following formats:  
@@ -72,3 +70,15 @@ op: a=5 , b=4*
 **3)** Write a program to rotate the values in 3 variables.  
 *eg., a=3, b=5 , c = 8
 OP: a =5, b = 8, c = 3*
+
+## DAY-4 25TH FEB 2021
+## LAB_TEST
+An ATM gives money in denominations of 2000,500, 200, 100 & 50/- . Given an amount as input, print how many notes of each denomination will be released. this program will work only for amounts entered in multiples of 50.
+
+***input*** : 22350
+
+***output*** : 2000/- notes: 11  
+         500/- notes: 0  
+         200/- notes: 1  
+         100/- notes: 1  
+         50/- notes: 1  
