@@ -27,10 +27,10 @@ int main()
        	a=a-(temp*50);
 
 
-        printf("invalid..!!!!\nEntered amount exceeds by %d,\n ignore if  value =0, otherwise  deduce that amount and enter again \n",a); // error message
+       // printf("invalid..!!!!\nEntered amount exceeds by %d,\n ignore if  value =0, otherwise  deduce that amount and enter again \n",a); // error message
 
 
 
-	return 0;
+	return (a>=1);          // 'a' value above or equal to 1 shows error,  otherwise code runs successfully
 
 }
