@@ -37,16 +37,16 @@ with and without -o option, and make some changes to code and generate error/war
 eg., 4532
 OP1: 
 
-2
-3
-5
+2  
+3  
+5  
 4
 
 OP2:
 
-4
-5
-3
+4  
+5  
+3  
 2
 
 OP3:
