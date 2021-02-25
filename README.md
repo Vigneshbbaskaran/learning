@@ -17,7 +17,7 @@ with and without -o option, and make some changes to code and generate error/war
 
 **2)**try input and output on different variables,create variables and then formatted output and inputs, print some expressions with arithmetic operations 
 
-**3)**"Calculation of simple interest.
+**3)**Calculation of simple interest.
 
 **4)**calculate of average of 4 numbers & print.
 
@@ -63,7 +63,7 @@ eg., 4532
 45  
 4
 
-**OP5:**  
+
 **2)** Write a program to swap the values of 2 numbers.   
 *eg., a = 4 , b=5
 op: a=5 , b=4*
