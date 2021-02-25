@@ -3,8 +3,12 @@ int main()
 {
 	int temp,a1,b1,c1;
 	char a,b,c;
-	printf("enter a character NUMBER\n");
-	scanf("%c%c%c",&a,&b,&c);
+	printf("enter a character number\n");
+	scanf("%c",&a);
+	printf("enter a character number\n");
+	scanf(" %c",&b);
+	printf("enter a character number\n");
+	scanf(" %c",&c);
 	a1=a-48; 
 	b1=b-48;
 	c1=c-48;
