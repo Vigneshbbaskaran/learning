@@ -8,17 +8,17 @@ int a,b,c;
 if (a >= b)
     {
         if (a >= c)
-            printf("%d is the largest number.\n", a);
+            printf("%d is the largest number\n", a);
         else 
-            printf("%d is the largest number.\n", c);
+            printf("%d is the largest number\n", c);
    
     }
     else
     {
         if (b >= c)
-            printf("%d is the largest number.\n", b);
+            printf("%d is the largest number\n", b);
         else
-            printf("%d is the largest number.\n", c);
+            printf("%d is the largest number\n", c);
     }
 return 0;
 }
