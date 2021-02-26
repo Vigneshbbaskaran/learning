@@ -7,7 +7,7 @@ printf("enter the units consume\n");
 scanf("%d",&a);
 
 if(a>=0)
-    {
+{
 	if(a<=200)
 	{
 		printf("cost:100/-\n");
