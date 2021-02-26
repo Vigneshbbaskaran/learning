@@ -99,7 +99,7 @@ output : 4
          453  
          4534  
          
-## 26FEB 2021
+## 26 FEB 2021
 ## Conditional Statements
 
 1)Write a program to find the biggest of 2 nmbers.
