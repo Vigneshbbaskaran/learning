@@ -2,7 +2,7 @@
 int main()
 {
 char o;
-int a,b,temp;
+int a,b;
 printf("\nallowed operators for calculation '+' '-' '*' '/'\n\nenter number in this Format: num1 'operator' numb2\n");
 scanf("%d%c%d",&a,&o,&b);
 
