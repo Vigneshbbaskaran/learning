@@ -74,48 +74,48 @@ OP: a =5, b = 8, c = 3*
 ## 25TH FEB 2021
 ## LAB_TEST
 An ATM gives money in denominations of 2000,500, 200, 100 & 50/- . Given an amount as input, print how many notes of each denomination will be released. this program will work only for amounts entered in multiples of 50.
-
+*
 ***input*** : 22350
 
 ***output*** : 2000/- notes: 11  
          500/- notes: 0  
          200/- notes: 1  
          100/- notes: 1  
-         50/- notes: 1  
+         50/- notes: 1 *  
          
 ## ASSIGNMENT QUESTION
 ### Variables & DataTypes 
 ***1)***Read a character and print its ascii value, and vice versa.  
 ***2)***Input 3 digits, read them into three different characters. Make one integer out of them and display.  
-Eg., input 345. char c =‘3’,b=‘4’,d=‘5’.   
-Output : int i = 345.  
+*Eg., input 345. char c =‘3’,b=‘4’,d=‘5’.   
+Output : int i = 345.  *
 Hint : Find how you can convert a digital character to its equivalent integer digit and add its place value.  
 
 ***3)***Read a 4 digit number and print it in the below format witout using any operators (use escape sequences).  
-input : 4534  
+*input : 4534  
 
 output : 4  
          45  
          453  
-         4534  
+         4534*  
          
 ## 26 FEB 2021
 ## Conditional Statements
 
 ***1)***Write a program to find the biggest of 2 nmbers.
-input : -5 -9
+*input : -5 -9
 output : -5 is biggest
 
 input: 15 11
-output : 15 is biggest
+output : 15 is biggest*
 
 ***2)*** Write a program to find if a given integer is even number or odd number.
 
-input : 5
+*input : 5
 output: 5 is odd number
 
 input : 12
-output : 12 is even number
+output : 12 is even number*
 
 ***3)***Write a program to find the biggest of three numbers using if else statements.
 
