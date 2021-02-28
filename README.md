@@ -146,7 +146,7 @@ output : 2
 input: 5% 2
 output: 1
 
-7)Find the power bill for the input number of units :
+7)Find the power bill for the input number of units :  
 0 - 200 units : 100/- min
 201 - 400 units : 100 + 0.65 per unit excess of 200
 401 - 600 units : 230 + 0.80 per unit excess of 400
