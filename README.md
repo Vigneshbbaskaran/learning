@@ -159,7 +159,7 @@ output : 116.25 /-
 80 - 100        : Honours  
 60 - 79         : First Division  
 50 - 59         : Second Division  
-40 - 49         : Third Division
+40 - 49         : Third Division  
 0 - 39          : Fail
 eg., input : 66 88 76 47 80 71
 percentage : 71.33%
