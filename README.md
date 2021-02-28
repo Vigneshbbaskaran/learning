@@ -158,7 +158,7 @@ output : 116.25 /-
 8)Find the % of marks for 6 subjects, for a student, and print the grade of the student as per below division , using if else statement.  
 80 - 100        : Honours  
 60 - 79         : First Division  
-50 - 59         : Second Division
+50 - 59         : Second Division  
 40 - 49         : Third Division
 0 - 39          : Fail
 eg., input : 66 88 76 47 80 71
