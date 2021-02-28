@@ -81,14 +81,14 @@ An ATM gives money in denominations of 2000,500, 200, 100 & 50/- . Given an amou
          500/- notes: 0  
          200/- notes: 1  
          100/- notes: 1  
-         50/- notes: 1 *  
+         50/- notes: 1*  
          
 ## ASSIGNMENT QUESTION
 ### Variables & DataTypes 
 ***1)***Read a character and print its ascii value, and vice versa.  
 ***2)***Input 3 digits, read them into three different characters. Make one integer out of them and display.  
 *Eg., input 345. char c =‘3’,b=‘4’,d=‘5’.   
-Output : int i = 345.  *
+Output : int i = 345.*
 Hint : Find how you can convert a digital character to its equivalent integer digit and add its place value.  
 
 ***3)***Read a 4 digit number and print it in the below format witout using any operators (use escape sequences).  
