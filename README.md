@@ -135,7 +135,7 @@ output : given number is positive
 input : 1 1 5 -18
 output : 5
 
-****6)***Write a calculator program that takes two integer numbers from user, and one of the operands +,-,* and / as a character and prints the appropriate result using if else.
+***6)***Write a calculator program that takes two integer numbers from user, and one of the operands +,-,* and / as a character and prints the appropriate result using if else.
 
 eg., input : 3 + 4
 output : 7
