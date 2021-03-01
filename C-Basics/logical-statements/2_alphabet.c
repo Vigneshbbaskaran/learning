@@ -9,13 +9,13 @@ int main()
 	if(temp >=65)
 	{
 		if(temp<=90)
-			printf("Capital Alphabet\n\n");
+			printf("Uppercase Alphabet\n\n");
 		else if(temp<97)
 			printf("Not an Alphabet\n\n");
 		else if(temp>122)
 			printf("Not an Alphabet\n\n");
 		else
-			printf("Small Alphabet\n\n");
+			printf("Lowercase Alphabet\n\n");
 	
 	}
 	else
