@@ -20,8 +20,10 @@ if(a<=31 && a>=00 && b<=12 && b>=00 && c>=00 ) // checking valid day, month and 
 		{
 			if(a>a1)
 				printf("\n%d-%d-%d is older date\n",a1,b1,c1);
+			else if(a==a1)
+			    printf("\n%d-%d-%d both date same\n",a,b,c); 
 			else
-				printf("\n%d-%d-%d is older date\n",a,b,c); // incase both day same, same output will be displayed
+				printf("\n%d-%d-%d is older date\n",a,b,c); 
 		}
 		else
 		printf("\n%d-%d-%d is older date\n",a,b,c);
