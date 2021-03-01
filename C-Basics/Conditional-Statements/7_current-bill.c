@@ -7,19 +7,19 @@ printf("enter the units consume\n");
 scanf("%d",&a);
 
 if(a>=0)
-{
+    {
 	if(a<=200)
 	{
 		printf("cost:100/-\n");
 	}
 	else if(a>600)
 	{	
-		temp=390+(a-200);
+		temp=390+(a-600);
 		printf("cost:%.2f/-\n",temp);
 	}
 	else if(a>400)
 	{
-		temp=230+((a-200)*0.85);
+		temp=230+((a-400)*0.80);
 		printf("cost:%.2f/-\n",temp);
 	}	
 	else if(a>200)
