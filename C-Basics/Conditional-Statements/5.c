@@ -3,7 +3,7 @@
 int main()
 {
 int a,b,c,d,temp;
-printf("Enter four values for comparision\n ");
+printf("Enter four values for comparison\n ");
 scanf("%d %d %d %d", &a, &b, &c, &d);
 
 if (a > b)
