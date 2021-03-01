@@ -41,7 +41,7 @@ else
     }
   }
 
-printf("\n %d is the bigest number", temp);
+printf("\n %d is the bigest number\n", temp);
 
   return 0;
 }
