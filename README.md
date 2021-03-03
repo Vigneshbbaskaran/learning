@@ -5,18 +5,18 @@
 # 3rd MARCH 2021
 # Switch statement assignments
 
-1) C program to check whether a character is vowel or consonant using switch statement.  
-2) Write the calculator program using switch case statement.  
-3)"Convert the percentage marks program to print the grade of the student as per below division , using switch statement.  
+***1)*** C program to check whether a character is vowel or consonant using switch statement.  
+***2)*** Write the calculator program using switch case statement.  
+***3)***"Convert the percentage marks program to print the grade of the student as per below division , using switch statement.  
 80 - 100        : Honours  
 60 - 79         : First Division  
 50 - 59         : Second Division  
 40 - 49         : Third Division  
 0 - 39          : Fail"  
-4) C program to check whether a number is odd or even using switch statement  
-5) C program to find biggest of two numbers using switch statement  
-6) check if a character is vowel or not using switch statement  
-7) check if a character is alphabet or not using switch statement.  
+***4)*** C program to check whether a number is odd or even using switch statement  
+***5)*** C program to find biggest of two numbers using switch statement  
+***6)*** check if a character is vowel or not using switch statement  
+***7)*** check if a character is alphabet or not using switch statement.  
 
 # 2nd MARCH 2021
 # Conditional Operator assignments
@@ -31,14 +31,15 @@
 7	check if a character is alphabet or not  
 8	check if a character is vowel or not  
 9	check if an year is leap year or not.  
+
 ## 1st MARCH 2021
 ## LOGICAL STATEMENTS
-1)Write a Program to check if a character is vowel or not  
-2)check if a character is alphabet or not  
-3)Take an integer as input and print its magnitude (remove sign).  
-4)check if an year is leap year or not.  
-5)Input an alphabet. Output its case reverse.  
-6)Write a program to read 2 dates (day, month & year of 2 dates) ,and compare them and print which date is older.  
+***1)***Write a Program to check if a character is vowel or not  
+***2)***check if a character is alphabet or not  
+***3)***Take an integer as input and print its magnitude (remove sign).  
+***4)***check if an year is leap year or not.  
+***5)***Input an alphabet. Output its case reverse.  
+***6)***Write a program to read 2 dates (day, month & year of 2 dates) ,and compare them and print which date is older.  
 eg., input date 1:  3-3-2000  
 input date 2: 2-3-2000  
 output: 2-3-2000 is older date  
