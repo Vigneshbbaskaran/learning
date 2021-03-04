@@ -20,7 +20,7 @@ case 'U':
 	printf("enter character is vowel\n");
 	break;
 default:
-	printf("entered characer is not vowel\n");
+	printf("entered characer is consonant\n");
 }
 return 0;
 }
