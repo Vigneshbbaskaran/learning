@@ -2,7 +2,7 @@
 
 # 'C' Programming Basics
 
-# 8 March
+# 8 March 2021
 
 1)Write a program that reads a floating-point number and then displays the right-most digit of the integral part of the number.  
 (Eg: User enters, 456.789, the output should be 6, which is last digit of the integral part of the number).  
