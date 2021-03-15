@@ -1,3 +1,6 @@
+/* 6)WaP to read few positive numbers from user until a negative number is entered by the user, 
+and print the sum of the positive numbers. Also print the number of positive numbers entered by the user. */
+
 #include<stdio.h>
 int main()
 {
