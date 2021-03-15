@@ -1,3 +1,7 @@
+//11)WaP to calculate the power of a number raised to another integer without using any readymade features.
+//eg., input: 4 5
+//output: 1024 (should be calculated in a repetitive product method)
+
 #include<stdio.h>
 int main()
 {
