@@ -1,3 +1,5 @@
+//5)WaP to read n numbers from user and print the sum of positive numbers and sum of negative numbers seperately.
+
 #include<stdio.h>
 int main()
 {
