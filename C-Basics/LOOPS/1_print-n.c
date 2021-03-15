@@ -1,7 +1,5 @@
 //1)WaP to print all numbers from 1 to n.
 
-
-
 #include <stdio.h>
 int main()
 {
