@@ -1,8 +1,5 @@
 //2)WaP to print all odd numbers and even numbers between 2 given numbers.
 
-
-
-
 #include<stdio.h>
 int main()
 {
