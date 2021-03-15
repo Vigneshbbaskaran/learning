@@ -1,3 +1,6 @@
+//10)WaP to calculate the product of 2 numbers without using multipliction operator (*).
+//eg., input : 4 5
+
 #include<stdio.h>
 int main()
 {
