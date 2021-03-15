@@ -1,3 +1,5 @@
+//4)WaP to read n numbers from user and print their sum.
+
 #include<stdio.h>
 int main()
 {
