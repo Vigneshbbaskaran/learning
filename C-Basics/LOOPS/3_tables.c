@@ -1,3 +1,6 @@
+//3) Read a number and print its multiplication table.
+
+
 #include<stdio.h>
 int main()
 {
