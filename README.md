@@ -3,7 +3,7 @@
 # 'C' Programming Basics
 
 # 15 MARCH 2021
-## loops assignments
+## Loops assignments
 
 1)WaP to print all numbers from 1 to n.  
 2)WaP to print all odd numbers and even numbers between 2 given numbers.  
