@@ -12,7 +12,7 @@ int main()
 	printf("enter N:\n");
 	scanf("%d",&n);
 	printf("enter numbers\n");
-	for(i=0;i<=n;i++)
+	for(i=0;i<n;i++)
 	{
 		
 		scanf("%d",&a);
