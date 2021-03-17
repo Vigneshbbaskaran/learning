@@ -1,3 +1,12 @@
+/*
+10)without using nested loops( Using only 1 loop)
+*
+* *
+* * *
+* * * *
+* * * * *
+*/
+
 #include<stdio.h>
 int main()
 {
