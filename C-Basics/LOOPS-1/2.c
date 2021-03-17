@@ -1,3 +1,5 @@
+//2) Write a program to find out if an integer entered by a user is a prime number or not.
+
 #include<stdio.h>
 int main()
 {
