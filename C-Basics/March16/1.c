@@ -5,17 +5,17 @@ int main()
 	printf("enter a prime number\n");
 	scanf("%d",&a);
 	i=a;
-	a--;
-	for(;a>1;a--)
+	a--; // to avoid divide by itself
+	for(;a>1;a--)   // a>1 to avoid divide by 1
 	{
 		if(i%a==0)
 		{
 		
-			printf("a=%d i=%d ",a,i);
+			printf("divisible by: %d\n",a);
 			temp =1;
-			break;
+			
 		}
 	}
-temp==0 ? printf("prime number\n") : printf("not a prime number\n");
+temp==0 ? printf("\nPrime number\n") : printf("\nNot a prime number\n");
 return 0;
 }
