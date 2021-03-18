@@ -1,3 +1,10 @@
+/*
+16)"Write a program to print the first n Fibonacci numbers.
+
+Eg., First 8 Fibonacci numbers are :
+1  1  2  3  5  8  13  21 "
+*/
+
 #include<stdio.h>
 int main()
 {
