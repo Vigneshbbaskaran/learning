@@ -1,3 +1,5 @@
+//12)Find the quotient result of a division operation for 2 input integers, without using / operator. Also print reminder without using % operator.
+
 #include<stdio.h>
 int main()
 {
