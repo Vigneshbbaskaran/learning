@@ -34,7 +34,7 @@ return 0;
 void isPrime(int a)
 {
 	int temp=0,i;
-        for(i=a-1;i>1;i--)   // a>1 to avoid divide by 1
+        for(i=a-1;i>1;i--)   // i>1 to avoid divide by 1
         {
                 if(a%i==0)
                 {
