@@ -1,4 +1,4 @@
-//14) Write a program to find out if an integer entered by a user is a prime number or not using factor counting method.
+//15) Write a program to find out if an integer entered by a user is a prime number or not using break statement.
 
 #include<stdio.h>
 int main()
