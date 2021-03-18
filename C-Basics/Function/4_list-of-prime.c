@@ -1,3 +1,7 @@
+/*
+4)Write a program with a function that takes two integer arguments, and prints all prime numbers between those numbers using the prime number function written above.return type should be void.
+PrintAllPrimes - return type is void. Should use IsPrime()
+*/
 #include<stdio.h>
 void isPrime(int);
 
