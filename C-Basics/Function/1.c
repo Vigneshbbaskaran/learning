@@ -1,3 +1,7 @@
+/*1)Modify the calculator program - with functions ,Add(),Sub(),Mul(),Div(),Mod(). Each function should take the inputs as parameters and return the result as output.
+Hint: int add(int , int); 
+int sub (int, int);
+*/
 #include<stdio.h>
 int main()
 {
@@ -32,8 +36,6 @@ int mul(int a,int b)
 
 int div(int a,int b)
 	{
-		//float c;
-	//	c= a/b;
 		return a/b;
 	}
 
