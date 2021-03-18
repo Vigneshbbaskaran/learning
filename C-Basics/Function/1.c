@@ -1,15 +1,10 @@
-/*
-1)Modify the calculator program - with functions ,Add(),Sub(),Mul(),Div(),Mod(). Each function should take the inputs as parameters and return the result as output.
-Hint: int add(int , int); 
-int sub (int, int);
-*/
 #include<stdio.h>
 
-int add(int a,int b);
-int sub(int a,int b);
-int mul(int a,int b);
-float div(int a,int b);
-int mod(int a,int b);
+int add(int ,int);
+int sub(int ,int );
+int mul(int ,int );
+float div(int ,int );
+int mod(int ,int );
 
 int main()
 
