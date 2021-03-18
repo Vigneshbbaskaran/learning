@@ -1,6 +1,125 @@
 # KM40BESD01 
 
 # 'C' Programming Basics
+# 17 MARCH 2021
+## FUNCTIONS Assiments
+
+1)Modify the calculator program - with functions ,Add(),Sub(),Mul(),Div(),Mod(). Each function should take the inputs as parameters and return the result as output.  
+Hint: int add(int , int);   
+int sub (int, int);  
+
+2)Write a function ,that can take two integers, swap their values and print their new values.return type should be void.  
+
+3)write a function that can take an integer as input and return 1, if the number is prime number and 0 if it is not prime and print appropriate output message.
+return type is integer.  
+IsPrime - returns int (0,1)  
+
+4)Write a program with a function that takes two integer arguments, and prints all prime numbers between those numbers using the prime number function written above.return type should be void.  
+PrintAllPrimes - return type is void. Should use IsPrime()  
+  
+5)Write a function that takes an integer parameter and prints its multiplication table.return type should be void.  
+
+6)Write a function to determine if a character is alphanumeric or not.   
+Hint: int fun_alpha_num(char c)  
+  
+7)Write a function that takes two numbers, a and n as input arguments and returns the value of a to the power of n.  
+
+8)Write a function to accept a year as input and return 1 if the year is a leap year, otherwise 0.  
+  
+9)Write a function to accept two dates as input arguments, and return 1 if the first date is older, 0 if the second date is older. Print appropriate message.  
+  
+10)Write a function that accepts a month and year as input, and returns the number of days of the month as output. Print the number of days in a given month and year.  
+  
+11)Write a function to accept a date and validate the date.  
+  
+12)Write a function to accept a character as input, return the upper case character, if the given character is a lower case alphabet, otherwise return the character as it is.
+char CaseReverse(char );  
+
+13)Write a function to return the product of two numbers without using * operator.  
+
+# 16 MARCH 2021
+## LOOPS-1 assignment
+1)Write a program to input n numbers and print the largest and smallest numbers out of them.  
+  
+Eg., 3,23,56,34,78,45,26,90,68,77  
+Biggest Number is 90  
+Smallest Number is 3  
+   
+2) Write a program to find out if an integer entered by a user is a prime number or not.  
+3)using while ,do while and for loops  
+    *  
+    * *  
+    * * *  
+    * * * *  
+    * * * * *  
+4)  
+1  
+2 2  
+3 3 3  
+4 4 4 4  
+5 5 5 5 5  
+
+5)  
+1  
+1 2  
+1 2 3  
+1 2 3 4  
+1 2 3 4 5  
+  
+6)  
+1  
+0 1  
+1 0 1  
+0 1 0 1  
+1 0 1 0 1  
+  
+7)  
+5  
+4 4  
+3 3 3  
+2 2 2 2  
+1 1 1 1 1  
+  
+8)  
+5  
+5 4  
+5 4 3  
+5 4 3 2  
+5 4 3 2 1  
+  
+9)  
+1  
+2    3  
+4    5   6  
+7    8   9    10  
+11   12  13   14  15  
+  
+10)without using nested loops( Using only 1 loop)  
+    *  
+    * *  
+    * * *  
+    * * * *  
+    * * * * *  
+  
+11)Write a program to input a number and count the digits in it.  
+Eg.   
+0 - number of digits 1  
+12 – number of digits 2  
+155 – number of digits 3  
+
+12)Find the quotient result of a division operation for 2 input integers, without using / operator. Also print reminder without using % operator.  
+
+14) Write a program to find out if an integer entered by a user is a prime number or not using factor counting method.  
+
+15) Write a program to find out if an integer entered by a user is a prime number or not using break statement.  
+
+16)"Write a program to print the first n Fibonacci numbers.  
+ 
+Eg., First 8 Fibonacci numbers are :  
+1  1  2  3  5  8  13  21 "  
+  
+17)Write a program to find the reverse of an integer.  
+
 
 # 15 MARCH 2021
 ## Loops assignments
