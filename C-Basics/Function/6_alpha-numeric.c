@@ -1,3 +1,6 @@
+//6)Write a function to determine if a character is alphanumeric or not. 
+//Hint: int fun_alpha_num(char c)
+
 #include<stdio.h>
 int fun_alpha_num(char c);
 
