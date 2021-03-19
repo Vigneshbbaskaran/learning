@@ -1,3 +1,4 @@
+//13)Write a function to return the product of two numbers without using * operator.
 #include<stdio.h>
 int mul(int,int);
 int main()
