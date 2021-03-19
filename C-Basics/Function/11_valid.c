@@ -1,3 +1,4 @@
+//11)Write a function to accept a date and validate the date.
 #include<stdio.h>
 void validate(int,int,int);
 
