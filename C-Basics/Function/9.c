@@ -1,3 +1,4 @@
+//9)Write a function to accept two dates as input arguments, and return 1 if the first date is older, 0 if the second date is older. Print appropriate message.
 #include<stdio.h>
 int date(int ,int ,int ,int ,int ,int);
 int main()
