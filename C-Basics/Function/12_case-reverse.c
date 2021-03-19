@@ -1,3 +1,8 @@
+/*12)Write a function to accept a character as input, return the upper case character, 
+if the given character is a lower case alphabet, otherwise return the character as it is.
+char CaseReverse(char );
+*/
+
 #include<stdio.h>
 char casereverse(char);
 
