@@ -1,3 +1,4 @@
+//8)Write a function to accept a year as input and return 1 if the year is a leap year, otherwise 0.
 #include<stdio.h>
 int leap(int );
 
