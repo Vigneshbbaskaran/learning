@@ -1,3 +1,4 @@
+//7)Write a function that takes two numbers, a and n as input arguments and returns the value of a to the power of n.
 #include<stdio.h>
  int power(int,int);
 
