@@ -1,3 +1,4 @@
+//17)Write a program to find the reverse of an integer.
 #include <stdio.h>
 
 int main() {
