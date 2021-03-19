@@ -1,3 +1,5 @@
+//5)Write a function that takes an integer parameter and prints its multiplication table.return type should be void.
+
 #include<stdio.h>
 void table(int);
 
