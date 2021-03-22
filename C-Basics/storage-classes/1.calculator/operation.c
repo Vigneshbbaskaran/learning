@@ -33,19 +33,19 @@ switch(c)
 {
 case '+':
 	return add() ;
-	break;
+	
 case '-': 
 	return sub();
-	break;
+	
 case '*': 
 	return mul();
-	break;
+	
 case '/': 
 	return div();
-	break;
+	
 case '%': 
 	return mod();
-	break;
+	
 	
 }
 }
