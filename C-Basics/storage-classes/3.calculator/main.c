@@ -1,8 +1,8 @@
 /*Rewrite the calculator program so that the main function is in main.c , 
 remaining functions are in another source code file ,operations.c
 
-
-3 ) Create the operand variables as global variables and the operator as an argument. result should be printed in function itself without returning.
+3 ) Create the operand variables as global variables and the operator as an argument. 
+result should be printed in function itself without returning.
 */
 #include<stdio.h>
 int a,b;
