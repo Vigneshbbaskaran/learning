@@ -1,4 +1,9 @@
+/*Rewrite the calculator program so that the main function is in main.c ,
+remaining functions are in another source code file ,operations.c. 
 
+1 ) Create the operand variables as global variables and use them in the operation functions directly, without passing as arguments. 
+Function returns the result as return value.
+*/
 #include<stdio.h>
 int a,b;
 int add(void);
