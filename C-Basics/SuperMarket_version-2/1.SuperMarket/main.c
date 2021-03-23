@@ -1,3 +1,7 @@
+/*1) Stock variable should be restricted to stock file,
+and any modifications also should happen only in stock file. 
+Only the functions should be accessible to other files.
+*/
 #include<stdio.h>
 void sales(int);
 void purchase(int);
