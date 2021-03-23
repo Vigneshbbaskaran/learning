@@ -1,3 +1,11 @@
+/*
+4) When user chooses quit,display the below report:
+i)  Latest Stock
+ii) Total number of times sales happened
+iii) Total number of items sold
+iv) Total number of times purchase happened
+v) Total number of items purchased
+*/
 #include<stdio.h>
 extern int stemp,scount,ptemp,pcount;
 void sales(int);
