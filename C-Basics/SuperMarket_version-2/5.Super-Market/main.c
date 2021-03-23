@@ -1,3 +1,9 @@
+/*
+5)Declare the commonly used function declarations and external variables in a header file, 
+and include it in all the four source code files, using the below syntax :
+
+#include”SuperMarket.h”
+*/
 #include "header.h"
 extern int stemp,scount,ptemp,pcount;
 
