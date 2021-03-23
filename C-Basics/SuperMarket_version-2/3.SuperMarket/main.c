@@ -1,3 +1,9 @@
+/*3)When the user chooses Purchase New stock option, and there is not enough space, then instead of cancelling the purchase, 2 options will be displayed:
+i) Fill the godown
+ii) Cancel the purchase
+
+The user can choose any one of the above options and close the transaction.
+*/
 #include<stdio.h>
 void sales(int);
 void purchase(int);
