@@ -1,6 +1,35 @@
 # KM40BESD01 
 
 # 'C' Programming Basics
+
+# 23 MARCH 2021
+## Super Market Problem Version-2
+
+1) Stock variable should be restricted to stock file, and any modifications also should happen only in stock file. Only the functions should be accessible to other files.  
+
+2) When the user chooses Sell the stock option, and there is not enough stock, then instead of cancelling the sales, 2 options will be displayed:  
+i) Sell the existing stock  
+ii) Cancel the sales  
+  
+The user can choose any one of the above options and close the transaction.  
+
+3)When the user chooses Purchase New stock option, and there is not enough space, then instead of cancelling the purchase, 2 options will be displayed:  
+i) Fill the godown  
+ii) Cancel the purchase  
+
+The user can choose any one of the above options and close the transaction.  
+
+4) When user chooses quit,display the below report:  
+i)  Latest Stock  
+ii) Total number of times sales happened  
+iii) Total number of items sold  
+iv) Total number of times purchase happened  
+v) Total number of items purchased  
+
+5)Declare the commonly used function declarations and external variables in a header file,  
+and include it in all the four source code files, using the below syntax :  
+
+#include”SuperMarket.h”
 # 22 MARCH 2021
 ## Storage Classes Assignments
 Rewrite the calculator program so that the main function is in main.c , remaining functions are in another source code file ,operations.c.   
