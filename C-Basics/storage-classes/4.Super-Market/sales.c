@@ -1,5 +1,5 @@
 #include<stdio.h>
-int stocks;
+extern int stocks;
 void deletestocks(int);
 void sales(int amount)
 {
