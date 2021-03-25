@@ -1,3 +1,6 @@
+/*3)	Declare an array of size 10. Enter 10 elements and save them in the array. Print the array .
+Find out the biggest and smallest numbers and their indexes and print. 
+*/
 #include<stdio.h>
 int main()
 {
@@ -27,7 +30,7 @@ int main()
 		{
 			temp2[0] =a[i]; // values
 			temp2[1] =i;  // index
-			printf("\nsmallest a [%d] = %d\n",temp2[1],temp2[0]); //debugging
+			
 
 		}
 	}
