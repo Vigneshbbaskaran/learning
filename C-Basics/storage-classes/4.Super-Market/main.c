@@ -1,7 +1,7 @@
 #include<stdio.h>
 void sales(int);
 void purchase(int);
-int stocks; // initial stocks = 500, capacity = 100.
+extern int stocks; // initial stocks = 500, capacity = 100.
 int main()
 {
 char y;
