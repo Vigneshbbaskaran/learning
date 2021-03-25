@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+	int i,temp1[1],temp2[1],a[10];
+	for(i=0;i<10;i++)
+	{
+		printf("\na[%d] =",i);
+		scanf("%d",&a[i]);
+	}
+	printf("\na[10]= {");
+	for(i=0;i<10;i++)
+	{
+		printf(" %d,",a[i]);
+	}
+	printf("\b }\n");
+
+	temp1[0]=a[0];
+	temp2[0]=a[0];
+	for(i=0;i<10;i++)
+	{
+		if(a[i]>temp1[0])
+		{
+			temp1[0]=a[i]; // values
+			temp1[1]=i;   // index
+		}
+		if(a[i]<temp2[0])
+		{
+			temp2[0] =a[i]; // values
+			temp2[1] =i;  // index
+			printf("\nsmallest a [%d] = %d\n",temp2[1],temp2[0]); //debugging
+
+		}
+	}
+	
+	printf("\nbiggest among all \na[%d] = %d\n",temp1[1],temp1[0]);
+        printf("\nsmallest among all \na[%d] = %d\n",temp2[1],temp2[0]);	
+	
+return 0;
+
+}
