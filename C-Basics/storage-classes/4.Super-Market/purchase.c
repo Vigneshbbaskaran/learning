@@ -1,5 +1,5 @@
 #include<stdio.h>
-int stocks;
+extern int stocks;
 void addstocks(int);
 void purchase(int amount)
 {
