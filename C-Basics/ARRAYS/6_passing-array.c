@@ -1,3 +1,5 @@
+/*6)	Write a function to return the sum of all numbers in an integer array, sent as argument to the function.
+*/
 #include<stdio.h>
 void sum(int c[5],int a[5],int b[5]);
 int main()
