@@ -1,3 +1,8 @@
+/*
+8)	"Write a program to reverse an array and print it:  
+Input : array1 ={1,2,3,4,5};
+Output : array1 = {5,4,3,2,1};"
+*/
 #include<stdio.h>
 int main()
 {
