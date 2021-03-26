@@ -1,3 +1,12 @@
+/*
+10)	"Write a program to swap two arrays in reverse order."
+eg., array1 :  1 2 3 4 5
+array2 :  6 7 8 9 10
+
+after swapping output: 
+array1: 10 9 8 7 6
+array2: 5 4 3 2 1
+*/
 #include<stdio.h>
 void swap_reverse(int a[5],int b[5]);
 int main()
