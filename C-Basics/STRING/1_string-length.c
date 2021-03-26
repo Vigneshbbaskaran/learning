@@ -1,3 +1,6 @@
+/*
+1.string-length
+*/
 #include<stdio.h>
 int strlen (char st1[10]);
 int main()
