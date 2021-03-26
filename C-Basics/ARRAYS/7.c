@@ -1,3 +1,7 @@
+/*
+7)	Write a function to search for a specific element given by the user,
+in an array and return the index where it was found. The function will take the array and the number to search as arguments.
+*/
 #include<stdio.h>
 int pass(int a[10],int search);
 int main()
