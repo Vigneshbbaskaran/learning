@@ -1,3 +1,5 @@
+/*9)	Write a program to print an integer in binary format.
+*/
 #include<stdio.h>
 int main()
 {
