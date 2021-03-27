@@ -12,14 +12,12 @@ int main()
 void strcat1(char s1[20],char s2[20])
 {
 	int i,j;
-	for(i=0;s1[i]!='\0';i++); // search for s1 null character
-	j=i; //begin copy from s2 to s1 from null character
+	for(i=0;s1[i]!='\0';i++);
+	j=i;
 	i=0;
-	for(;j<20;j++,i++) 
+	for(;s2[i]!='\0';j++,i++)
 	{
-		s1[j]=s2[i]; 
-		if(s2[i]=='\0') //allow to copy null in s2-->s1 and then break
-			break;
+		s1[j]=s2[i];
 	}
 		
 return;
