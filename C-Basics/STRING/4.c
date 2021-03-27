@@ -18,7 +18,7 @@ void reverse(char a[10])
 	for(;i<10;i++,j--)
 	{
 	if(i<j)
-	{printf("a[%d] = %c\na[%d] = %c\n",i,a[i],j,a[j]);
+	{
 		temp=a[i];
 		a[i]=a[j];
 		a[j]=temp;
