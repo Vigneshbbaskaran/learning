@@ -1,3 +1,9 @@
+/*
+
+4)WAP to display the word expansion of a number
+eg., Input : 789
+Output : Seven Eight Nine
+*/
 #include<stdio.h>
 void expansion(int a);
 int main()
