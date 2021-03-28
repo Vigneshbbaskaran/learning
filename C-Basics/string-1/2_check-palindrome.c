@@ -1,3 +1,6 @@
+/*2)Write a function that takes a string as input, 
+and determines whether the string is a palindrome or not, returns 1 or 0.
+*/
 #include<stdio.h>
 int check(char a[100]);
 
