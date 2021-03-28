@@ -1,3 +1,5 @@
+/*1)Write a function that takes a string as an input, and count the number of words in the string, and returns the number,
+*/
 #include<stdio.h>
 int count(char a[100]);
 int main()
