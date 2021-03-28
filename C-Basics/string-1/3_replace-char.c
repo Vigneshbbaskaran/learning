@@ -1,3 +1,7 @@
+/*
+3)Write a function to replace a given character by another character in a string.
+The function takes one string, and 2 characters as input.
+*/
 #include<stdio.h>
 void replace(char a[100], char b, char c)
 {
