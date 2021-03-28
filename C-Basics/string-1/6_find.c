@@ -1,3 +1,9 @@
+/*6)Write a function called strstr that takes 2 strings as input, finds the first occurrence of second string, in the first string, and returns the index from where it starts in the first string. If the string is not found, returns -1.
+
+eg., Kernel Masters
+	Mast
+output : 7
+*/
 #include<stdio.h>
 int main()
 {
