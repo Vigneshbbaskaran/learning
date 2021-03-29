@@ -1,7 +1,41 @@
 # KM40BESD01 
 
 # 'C' Programming Basics
+# 28 MARCH 2021
+## Strings Assignments
+1)Write a function that takes a string as an input, and count the number of words in the string, and returns the number,  
 
+2)Write a function that takes a string as input, and determines whether the string is a palindrome or not, returns 1 or 0.  
+
+3)Write a function to replace a given character by another character in a string. The function takes one string, and 2 characters as input.  
+
+4)WAP to display the word expansion of a number  
+eg., Input : 789  
+Output : Seven Eight Nine  
+
+5)Write a trim() function,that will remove the leading and trailing spaces from a string.  
+eg., Input : "    str  str   "  
+Output : "str str  
+
+6)Write a function called strstr that takes 2 strings as input,    
+finds the first occurrence of second string, in the first string,  
+and returns the index from where it starts in the first string. If the string is not found, returns -1.  
+  
+eg., Kernel Masters  
+	Mast  
+output : 7  
+
+## Pointers Assignments
+
+1)Write a program to take input for two character variables using pointers and find out and print which character has higher ascii value.  
+
+2)Write a program to find the biggest of three numbers using pointers that point to those numbers.  
+
+3)Take three input integers x,y and z. Write a program to rotate their values such that, x has the value of y,  
+y has the value of z and z has the value of x. Do this using pointers that point to x,y and z.  
+
+4) Declare an integer array of size 10 and initialize it to some values.   
+Print the addresses of each element of the array using a pointer. using indirection operator , print the value stored in each element of the array.  
 # 25 MARCH 2021
 ## ARRAYS
 
