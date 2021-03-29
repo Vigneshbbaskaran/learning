@@ -1,3 +1,6 @@
+/*
+2)Write a program to find the biggest of three numbers using pointers that point to those numbers.
+*/
 #include<stdio.h>
 int main()
 {
