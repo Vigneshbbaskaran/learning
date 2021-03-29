@@ -1,10 +1,3 @@
-/*
-6)Write a function called strstr that takes 2 strings as input, finds the first occurrence of second string, in the first string, and returns the index from where it starts in the first string. If the string is not found, returns -1.
-
-eg., Kernel Masters
-	Mast
-output : 7
-*/
 #include<stdio.h>
 int index(char a[100],char b[100]);
 int main()
@@ -18,18 +11,22 @@ int main()
 	scanf("%s",b);
 	int temp;
 	temp = index(a,b);
-	printf("\nfound at %d\n",temp);
-
+	if(temp>=0)
+		printf("\nfound at %d\n",temp);
+	else 
+		printf("\nNot found\n");
 	return 0;
 }
 int index(char a[100],char b[100])
 {
-int i;
-	for(i=0;a[i]!='0';i++)
-	{
+int i,temp=-1;
+	for(i=0;a[i]!='\0';i++)
+	{		
 			if(a[i]==b[0])
-			{	break;
+			{	return i;
 			}
+			else
+				temp=-1;
 	}
-	return i;
+	return temp;
 }
