@@ -36,6 +36,26 @@ y has the value of z and z has the value of x. Do this using pointers that point
 
 4) Declare an integer array of size 10 and initialize it to some values.   
 Print the addresses of each element of the array using a pointer. using indirection operator , print the value stored in each element of the array.  
+
+# 26 MARCH 2021
+## STRING
+
+1.Find String length  
+
+2.Perform String copy  
+
+3.String concatenation  
+
+4.String reverse  
+
+5.String Lower  
+
+6.String Upper  
+
+7.String comparison  
+
+8.string char search  
+
 # 25 MARCH 2021
 ## ARRAYS
 
