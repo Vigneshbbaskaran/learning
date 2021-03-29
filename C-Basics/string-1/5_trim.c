@@ -1,3 +1,7 @@
+/*5)Write a trim() function,that will remove the leading and trailing spaces from a string.
+eg., Input : "    str  str   "
+Output : "str str
+*/
 #include<stdio.h>
 void trim(char a[100]);
 
