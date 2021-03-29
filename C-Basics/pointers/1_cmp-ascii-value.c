@@ -1,3 +1,5 @@
+/*1)Write a program to take input for two character variables using pointers and find out and print which character has higher ascii value.
+*/
 #include<stdio.h>
 int main()
 {
