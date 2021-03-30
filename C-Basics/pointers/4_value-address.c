@@ -15,7 +15,7 @@ int main()
 	printf("\n\nENTERED VALUES\n");
 	for(i=0;i<10;i++)
 	{
-	printf("a[%d]:\nvalue = %d\nAddress = %d\n\n",i,*p1,p1);
+	printf("a[%d]:\nvalue = %d\nAddress = %p\n\n",i,*p1,p1);
 	p1++;
 	}
 
