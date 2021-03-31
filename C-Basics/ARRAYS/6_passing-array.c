@@ -1,26 +1,27 @@
-/*6)	Write a function to return the sum of all numbers in an integer array, sent as argument to the function.
-*/
 #include<stdio.h>
-void sum(int c[5],int a[5],int b[5]);
+int sum(int a[5]);
 int main()
 {
-	int a[5]={11,2,33,4,58};
-	int b[5]={10,93,8,67,6};
-	int i, c[5];
-	sum(c,a,b);
+	int i, a[5];
 	for(i=0;i<5;i++)
 	{
-		printf("c[%d] = %d\n",i,c[i]);
+		printf("\na[%d] =",i);
+		scanf("%d",&a[i]);
 	}
+	
+	int temp;
+	temp=sum(a);
+	printf("sum of array = %d\n",temp);
+
 	return 0;
 }
 	
-void sum(int c[5],int a[5], int b[5])
+int sum(int a[5])
 {
-	int i;
+	int i,sum1=0;
 	for(i=0;i<5;i++)
 	{
-		c[i] = a[i] + b[i];
+		sum1 = sum1 +a[i] ;
 	}
-
+return sum1;
 }
