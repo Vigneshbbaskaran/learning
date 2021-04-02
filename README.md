@@ -1,6 +1,23 @@
 # KM40BESD01 
 
 # 'C' Programming Basics
+# 30 MARCH 2021
+## Pointers Assignments
+
+1)Write a program to swap two numbers using Call by Value and Call by Reference.  
+
+2)Note down the differences between Call by Value and Call by Reference and when to use what.  
+
+3)Write a function that can take two integers as input,     
+and gives 5 outputs : addition, subtraction, multiplication, quotient and reminder of those two numbers. Print the outputs in the main function.  
+
+4)Write two source files, main.c and swap.c.   
+The main function initializes a two-element array of ints, and then calls the swap function to swap the pair.  
+
+5)WAP whether a architecture is Little Endian or Big Endian?  
+
+6)WAP copy 0x20 data in to 0x7800 memory location?  
+
 # 28 MARCH 2021
 ## Strings Assignments
 1)Write a function that takes a string as an input, and count the number of words in the string, and returns the number,  
