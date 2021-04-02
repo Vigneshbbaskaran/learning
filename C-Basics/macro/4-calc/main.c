@@ -1,3 +1,5 @@
+/*4) Implement calculator program using macros. Write down your own header file ,where the calculator macros are defined(ADD,SUB,MUL,DIV).
+*/
 #include"header.h"
 
 int main()
