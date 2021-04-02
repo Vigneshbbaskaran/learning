@@ -1,3 +1,4 @@
+/*5) WAP to print if  a character is alphanumeric , using macros.*/
 #include<stdio.h>
 
 #define isalphanum(a) ((a>= 'a' && a<= 'z') ||( a>= 'A' && a<= 'Z')|| (a>='0' && a<='9'))
