@@ -1,3 +1,5 @@
+/*3) Write a macro to find biggest of three numbers, using biggest of two numbers macro.
+*/
 #include<stdio.h>
 #define MAX(x,y) (x)>(y)?(x):(y)
 int main()
