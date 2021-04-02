@@ -1,3 +1,5 @@
+/*2) Write down a macro to find the biggest of two numbers. Using this macro , implement array sorting.
+*/
 #include<stdio.h>
 
 #define MAX(x,y) x>y?1:0
