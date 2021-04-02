@@ -1,3 +1,7 @@
+/*3)Write a function that can take two integers as input, 
+and gives 5 outputs : 
+addition, subtraction, multiplication, quotient and reminder of those two numbers. Print the outputs in the main function.
+*/
 #include<stdio.h>
 void calc(int a,int b,int *sum, int *mul, int *qu, int *remain);
 int main()
