@@ -1,3 +1,5 @@
+/*8) Write a macro to print the biggest of three values. Try to call it and print the result for different data types, integer, float, double and character.
+*/
 #include<stdio.h>
 
 #define MAX(dt) dt max##dt(dt a, dt b, dt c)\
