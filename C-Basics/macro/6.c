@@ -1,3 +1,5 @@
+/*6) WAP to print if a year is leap year or not. Modify the date validation program using this.
+*/
 #include<stdio.h>
 #define isleap(c)   ( ((c%4 == 0) && (c%100 != 0)) || (c%400 == 0) ) 
 
