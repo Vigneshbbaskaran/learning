@@ -1,3 +1,5 @@
+/*9) Define  a macro that receives an array and the number of elements in the array as arguments. Write a program using this macro to print out the elements of an array.
+*/
 #include<stdio.h>
 
 #define array(a,j)   for(i=0;i<j;i++)\
