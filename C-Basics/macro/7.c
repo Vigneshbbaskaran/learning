@@ -1,3 +1,5 @@
+/*7) WAP to print a range of prime numbers. Use macro,to find if a number is prime or not.
+*/
 #include<stdio.h>
 
 #define isprime(a)  		 { int temp=1,i=a;\
