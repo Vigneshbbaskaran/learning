@@ -1,3 +1,5 @@
+/*11) Write a generic function to swap 2 numbers using macros, and use it for different data types.
+*/
 #include<stdio.h>
 #define swap(fn,dt) void fn(dt *a,dt *b)\
 	{\
