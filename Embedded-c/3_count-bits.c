@@ -1,3 +1,5 @@
+/*3. WAP to count the bits set (bit value 1 ) in an integer? Find out and compare different possibilities?
+*/
 #include<stdio.h>
 
 int main()
