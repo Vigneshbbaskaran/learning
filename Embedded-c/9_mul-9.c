@@ -1,3 +1,4 @@
+//9. WAP multiply a number by 9 using bit shift.
 #include<stdio.h>
 int main()
 {
