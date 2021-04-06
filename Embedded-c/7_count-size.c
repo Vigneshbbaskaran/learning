@@ -1,3 +1,5 @@
+/*7. WAP to implement the sizeof operation using the bitwise operator.
+*/
 #include<stdio.h>
 	
 
