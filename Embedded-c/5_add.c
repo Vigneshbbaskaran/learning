@@ -12,7 +12,7 @@ int  main()
 
 	
 
-	printf("\nA-B:%d\n",a-(~b+1));
+	printf("\nA+B:%d\n",a-(~b+1));
 
 	return 0;
 }
