@@ -14,8 +14,8 @@ int  main()
 
 	
 	printf("SET:%d\n",SET(a,n));
-	printf("SET:%d\n",RESET(a,n));
-	printf("SET:%d\n",TOGGLE(a,n));
+	printf("RESET:%d\n",RESET(a,n));
+	printf("TOGGLE:%d\n",TOGGLE(a,n));
 
 	return 0;
 }
