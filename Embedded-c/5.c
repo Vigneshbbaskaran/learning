@@ -1,3 +1,5 @@
+/*5. WAP implement addition functionality with out using ADD('+') Operator.  
+*/
 #include<stdio.h>
 
 int  main()
