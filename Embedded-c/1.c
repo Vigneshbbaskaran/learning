@@ -1,3 +1,5 @@
+/*1. Write a Macro's Set, clear and toggle n'th bit using bit wise operator?
+*/
 #include<stdio.h>
 #define SET(data,bit)  (data | (0x01<< bit))
 #define RESET(data,bit)  (data & ~(0x01<< bit))
