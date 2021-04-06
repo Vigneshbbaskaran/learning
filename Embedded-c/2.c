@@ -1,3 +1,4 @@
+//2. WAP print binary?
 #include<stdio.h>
 
 int main()
