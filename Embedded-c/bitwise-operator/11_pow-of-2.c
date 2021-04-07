@@ -8,9 +8,9 @@ int main()
 	scanf("%d",&a);
 	temp=a;
 	int i,count=0;
-	for(i=0;i<8;i++)
+	for(i=0;i<32;i++)
 	{
-		if(temp & 0x80)
+		if(temp & (0x01<<31))
 			count++;
 		temp=temp<<1;
 	}
