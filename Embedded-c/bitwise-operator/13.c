@@ -1,3 +1,4 @@
+//13. WAP Check if the 20th bit of a 32-bit integer is on or off?
 #include<stdio.h>
 int main()
 {
