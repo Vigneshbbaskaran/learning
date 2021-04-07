@@ -1,3 +1,4 @@
+//10. WAP whether a number is ODD or EVEN using bitwise.
 #include<stdio.h>
 
 int main()
