@@ -2,23 +2,13 @@
 
 int main()
 {
-	int a,i,b=0,temp;
-	printf("enter value\n");
-	scanf("%d",&a);
+	int a;
+	printf("enter a(hex):\n");
+	scanf("%x",&a);
 
-	for(i=0;i<32;i++)  // Perform operation
-	{
-		if( (a & (0x01<<31) ) == (0x01<<31) )
-		{
-		 (b | (0x01<<31));
-		printf("1");
-		}
-		b>>1;
-		a<<1;	
-		
-	}
+	a = ( (a<<24)|(a>>24)| ( (a>>8) & (0x0000FF00) ) | ( (a<<8) & (0x00FF0000) ) );
 
 	printf("\n");
-	printf("\na:%d\n",b);
+	printf("\na:%x\n",a);
 	return 0;
 }
