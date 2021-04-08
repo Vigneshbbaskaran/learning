@@ -1,3 +1,4 @@
+//8. WAP to convert Little endian integer to Big endian integer 
 #include<stdio.h>
 
 int main()
