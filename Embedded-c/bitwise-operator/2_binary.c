@@ -11,9 +11,9 @@ int main()
 
 printf("binary value:\n");
 	int i;
-	for(i=0;i<8;i++)
+	for(i=0;i<32;i++)
 	{
-		if(a & 0x80)
+		if(a & (0x01<<31))
 			printf("1");
 
 		else
