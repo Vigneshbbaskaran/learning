@@ -1,3 +1,7 @@
+heartik@Lenovo:~/Downloads$ gdb a.out
+
+
+
 GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -14,29 +18,113 @@ Find the GDB manual and other documentation resources online at:
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...
-(No debugging symbols found in a.out)
 (gdb) run
 Starting program: /home/heartik/Downloads/a.out 
 
 Program received signal SIGFPE, Arithmetic exception.
-0x00005555555551bf in error_with_code ()
-(gdb) w y
-No previous command to relaunch
-(gdb) b 5
-Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
-(gdb) b 10
-Note: breakpoint 1 also set at pc 0x7ffff7de8f20.
-Breakpoint 2 at 0x7ffff7de8f20: file init-first.c, line 44.
-(gdb) b 20
-Note: breakpoints 1 and 2 also set at pc 0x7ffff7de8f20.
-Breakpoint 3 at 0x7ffff7de8f20: file init-first.c, line 44.
+0x00005555555551bf in error_with_code () at 1_gdb_sample.c:59
+59	    result = 10 / divide_value;
+(gdb) l
+54	 {
+55	    int divide_value;
+56	    int result;
+57	
+58	    divide_value = Change_Value;
+59	    result = 10 / divide_value;
+60	    return ;
+61	
+62	 } /* End of error_with_code() */
+(gdb) l
+Line number 63 out of range; 1_gdb_sample.c has 62 lines.
+(gdb) l main
+8	  /* main () - main routine                    */
+9	  /*                                           */
+10	 /******************************************/
+11	
+12	 int main (void)
+13	 {
+14	    int Arg_1 = 20, Arg_2 = 40;
+15	    int i;
+16	
+17	
+(gdb) c
+Continuing.
+
+Program terminated with signal SIGFPE, Arithmetic exception.
+The program no longer exists.
+(gdb) 
+Display all 196 possibilities? (y or n)
+(gdb) 
+The program is not being run.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00005555555551bf in error_with_code () at 1_gdb_sample.c:59
+59	    result = 10 / divide_value;
+(gdb) b 58
+Breakpoint 1 at 0x5555555551b0: file 1_gdb_sample.c, line 58.
+(gdb) run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) c
+Continuing.
+
+Program terminated with signal SIGFPE, Arithmetic exception.
+The program no longer exists.
+(gdb) c
+The program is not being run.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+Breakpoint 1, error_with_code () at 1_gdb_sample.c:58
+58	    divide_value = Change_Value;
+(gdb) s
+59	    result = 10 / divide_value;
+(gdb) s
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00005555555551bf in error_with_code () at 1_gdb_sample.c:59
+59	    result = 10 / divide_value;
+(gdb) kill
+Kill the program being debugged? (y or n) y
+[Inferior 1 (process 4698) killed]
+(gdb) b main
+Breakpoint 2 at 0x555555555129: file 1_gdb_sample.c, line 13.
 (gdb) i b
 Num     Type           Disp Enb Address            What
-1       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
-2       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
-3       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
+1       breakpoint     keep y   0x00005555555551b0 in error_with_code 
+                                                   at 1_gdb_sample.c:58
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000555555555129 in main at 1_gdb_sample.c:13
+(gdb) c
+The program is not being run.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+Breakpoint 2, main () at 1_gdb_sample.c:13
+13	 {
+(gdb) c
+Continuing.
+
+Breakpoint 1, error_with_code () at 1_gdb_sample.c:58
+58	    divide_value = Change_Value;
+(gdb) p divide_value=5
+$1 = 5
+(gdb) c
+Continuing.
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00005555555551bf in error_with_code () at 1_gdb_sample.c:59
+59	    result = 10 / divide_value;
+(gdb) p result
+$2 = 2880
+(gdb) n
+
+Program terminated with signal SIGFPE, Arithmetic exception.
+The program no longer exists.
+(gdb) Quit
 (gdb) 
+
 
