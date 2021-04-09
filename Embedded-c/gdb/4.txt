@@ -1,0 +1,60 @@
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...
+(No debugging symbols found in a.out)
+(gdb) w 10
+No previous command to relaunch
+(gdb) continue
+The program is not being run.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+enter a: 2
+
+enter b: 3
+
+output:
+a = 3
+b = 2
+[Inferior 1 (process 9197) exited normally]
+(gdb) step
+The program is not being run.
+(gdb) b 5
+Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
+(gdb) b 10
+Note: breakpoint 1 also set at pc 0x7ffff7de8f20.
+Breakpoint 2 at 0x7ffff7de8f20: file init-first.c, line 44.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+enter a: 5
+
+enter b: 4
+
+output:
+a = 4
+b = 5
+[Inferior 1 (process 9204) exited normally]
+(gdb) w a
+No previous command to relaunch
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
+                                                   at init-first.c:44
+2       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
+                                                   at init-first.c:44
+(gdb) q
+
