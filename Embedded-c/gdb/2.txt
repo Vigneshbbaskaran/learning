@@ -1,0 +1,69 @@
+heartik@Lenovo:~/Downloads$ gcc -g 8_Grade.c 
+heartik@Lenovo:~/Downloads$ gdb a.out
+
+
+
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...
+(gdb) l
+1	#include<stdio.h>
+2	int main()
+3	{
+4	int s1,s2,s3,s4,s5,s6;
+5	float temp;
+6	printf("enter six subject marks\n");
+7	scanf("%d%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5,&s6);
+8	
+9	temp=(s1+s2+s3+s4+s5+s6)/6.0;
+10	printf("percentage:%.2f%%\nGrade:",temp);
+(gdb) b 9
+Breakpoint 1 at 0x120b: file 8_Grade.c, line 9.
+(gdb) r
+Starting program: /home/heartik/Downloads/a.out 
+enter six subject marks
+34
+45
+65
+23
+12
+64
+
+Breakpoint 1, main () at 8_Grade.c:9
+9	temp=(s1+s2+s3+s4+s5+s6)/6.0;
+(gdb) p temp
+$1 = 4.59163468e-41
+(gdb) c
+Continuing.
+percentage:40.50%
+Grade:Third Division
+[Inferior 1 (process 5133) exited normally]
+(gdb) info b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x000055555555520b in main at 8_Grade.c:9
+	breakpoint already hit 1 time
+(gdb) diable b
+Undefined command: "diable".  Try "help".
+(gdb) i b
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x000055555555520b in main at 8_Grade.c:9
+	breakpoint already hit 1 time
+(gdb) d 1
+(gdb) i b
+No breakpoints or watchpoints.
+(gdb) q
+heartik@Lenovo:~/Downloads$ 
+
