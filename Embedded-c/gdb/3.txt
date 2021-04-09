@@ -1,3 +1,5 @@
+heartik@Lenovo:~/Downloads$ gcc -g 3.c
+heartik@Lenovo:~/Downloads$ gdb a.out
 GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -14,29 +16,74 @@ Find the GDB manual and other documentation resources online at:
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...
-(No debugging symbols found in a.out)
-(gdb) run
+(gdb) l
+1	#include<stdio.h>
+2	int main()
+3	{
+4	int a,b,c;
+5	    printf("enter three nubers\n");
+6	    scanf("%d%d%d",&a,&b,&c);   
+7	
+8	if (a >= b)
+9	    {
+10	        if (a >= c)
+(gdb) b 7
+Breakpoint 1 at 0x11f0: file 3.c, line 8.
+(gdb) b 9
+Breakpoint 2 at 0x11fa: file 3.c, line 10.
+(gdb) r
 Starting program: /home/heartik/Downloads/a.out 
 enter three nubers
-2
-3
-5
-5 is the largest number
-[Inferior 1 (process 9019) exited normally]
-(gdb) w 10
-No previous command to relaunch
-(gdb) b 10
-Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
-(gdb) watch a
-No symbol "a" in current context.
-(gdb) b 20
-Note: breakpoint 1 also set at pc 0x7ffff7de8f20.
-Breakpoint 2 at 0x7ffff7de8f20: file init-first.c, line 44.
+12
+23
+34
+
+Breakpoint 1, main () at 3.c:8
+8	if (a >= b)
+(gdb) p a
+$1 = 12
+(gdb) p b
+$2 = 23
+(gdb) s
+18	        if (b >= c)
+(gdb) p b
+$3 = 23
+(gdb) p c
+$4 = 34
+(gdb) l
+13	            printf("%d is the largest number\n", c);
+14	   
+15	    }
+16	    else
+17	    {
+18	        if (b >= c)
+19	            printf("%d is the largest number\n", b);
+20	        else
+21	            printf("%d is the largest number\n", c);
+22	    }
+(gdb) s
+21	            printf("%d is the largest number\n", c);
+(gdb) p c
+$5 = 34
+(gdb) l
+16	    else
+17	    {
+18	        if (b >= c)
+19	            printf("%d is the largest number\n", b);
+20	        else
+21	            printf("%d is the largest number\n", c);
+22	    }
+23	return 0;
+24	}
 (gdb) i b
 Num     Type           Disp Enb Address            What
-1       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
-2       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
-(gdb) 
+1       breakpoint     keep y   0x00005555555551f0 in main at 3.c:8
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x00005555555551fa in main at 3.c:10
+(gdb) c
+Continuing.
+34 is the largest number
+[Inferior 1 (process 5331) exited normally]
+(gdb) q
+heartik@Lenovo:~/Downloads$ 
 
