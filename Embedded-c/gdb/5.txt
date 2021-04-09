@@ -1,0 +1,68 @@
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...
+(No debugging symbols found in a.out)
+(gdb) b 5
+No symbol table is loaded.  Use the "file" command.
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+enter a: 34
+
+enter b: 45
+
+output:
+a = 45
+b = 34
+[Inferior 1 (process 9311) exited normally]
+(gdb) b 5
+Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
+(gdb) b 10
+Note: breakpoint 1 also set at pc 0x7ffff7de8f20.
+Breakpoint 2 at 0x7ffff7de8f20: file init-first.c, line 44.
+(gdb) b main
+Breakpoint 3 at 0x555555555189
+(gdb) run
+Starting program: /home/heartik/Downloads/a.out 
+
+Breakpoint 3, 0x0000555555555189 in main ()
+(gdb) step
+Single stepping until exit from function main,
+which has no line number information.
+__printf (format=0x555555556004 "\nenter a: ") at printf.c:28
+28	printf.c: No such file or directory.
+(gdb) step
+32	in printf.c
+(gdb) step
+33	in printf.c
+(gdb) step
+__vfprintf_internal (s=0x7ffff7fae6a0 <_IO_2_1_stdout_>, 
+    format=0x555555556004 "\nenter a: ", ap=ap@entry=0x7fffffffde90, 
+    mode_flags=mode_flags@entry=0) at vfprintf-internal.c:1289
+1289	vfprintf-internal.c: No such file or directory.
+(gdb) continue
+Continuing.
+
+enter a: 5
+
+enter b: 6
+
+output:
+a = 6
+b = 5
+[Inferior 1 (process 9317) exited normally]
+(gdb) q
+
