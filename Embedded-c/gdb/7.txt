@@ -1,3 +1,5 @@
+heartik@Lenovo:~/Downloads$ gcc -g trim.c
+heartik@Lenovo:~/Downloads$ gdb a.out
 GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -14,22 +16,98 @@ Find the GDB manual and other documentation resources online at:
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...
-(No debugging symbols found in a.out)
-(gdb) b 10
-No symbol table is loaded.  Use the "file" command.
 (gdb) run
-Starting program: /home/heartik/programming/c/string-1/a.out 
+Starting program: /home/heartik/Downloads/a.out 
 enter a string for space removal:
- ert tyrty 
+ vfvfbf ffgf    
 after trimed:
-ert tyrty[Inferior 1 (process 9579) exited normally]
-(gdb) i b
-No breakpoints or watchpoints.
-(gdb) b 10
-Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
-(gdb) i b
-Num     Type           Disp Enb Address            What
-1       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
+vfvfbf ffgf[Inferior 1 (process 6641) exited normally]
+(gdb) l
+1	/*5)Write a trim() function,that will remove the leading and trailing spaces from a string.
+2	eg., Input : "    str  str   "
+3	Output : "str str
+4	*/
+5	#include<stdio.h>
+6	void trim(char a[100]);
+7	
+8	int main()
+9	
+10	{
+(gdb) b 8
+Breakpoint 1 at 0x5555555551a9: file trim.c, line 10.
+(gdb) l
+11		char a[100];
+12	
+13		printf("enter a string for space removal:\n");
+14		scanf("%[^\n]s",a);
+15	
+16		trim(a);
+17	
+18		printf("after trimed:\n%s",a);
+19	
+20		return 0;
+(gdb) b 16
+Breakpoint 2 at 0x5555555551e8: file trim.c, line 16.
+(gdb) r
+Starting program: /home/heartik/Downloads/a.out 
+
+Breakpoint 1, main () at trim.c:10
+10	{
+(gdb) s
+13		printf("enter a string for space removal:\n");
+(gdb) s
+__GI__IO_puts (str=0x555555556008 "enter a string for space removal:")
+    at ioputs.c:33
+33	ioputs.c: No such file or directory.
+(gdb) s
+35	in ioputs.c
+(gdb) s
+36	in ioputs.c
+(gdb) c
+Continuing.
+enter a string for space removal:
+ gfg  fgfg fhfhf
+
+Breakpoint 2, main () at trim.c:16
+16		trim(a);
+(gdb) p a
+$1 = " gfg  fgfg fhfhf\000@UUUU\000\000\r\000\000\000\000\000\000\000\240\337\377\377\377\177\000\000y\343\377\377\377\177\000\000\340\025\375\367\377\177\000\000=SUUUU\000\000\310/\373\367\377\177\000\000\360RUUUU\000\000\000\000\000\000\000\000\000\000\300PUUUU\000\000p\340\377\377"
+(gdb) c
+Continuing.
+after trimed:
+gfg  fgfg fhfhf[Inferior 1 (process 6651) exited normally]
+(gdb) disas main
+Dump of assembler code for function main:
+   0x00005555555551a9 <+0>:	endbr64 
+   0x00005555555551ad <+4>:	push   %rbp
+   0x00005555555551ae <+5>:	mov    %rsp,%rbp
+   0x00005555555551b1 <+8>:	sub    $0x70,%rsp
+   0x00005555555551b5 <+12>:	mov    %fs:0x28,%rax
+   0x00005555555551be <+21>:	mov    %rax,-0x8(%rbp)
+   0x00005555555551c2 <+25>:	xor    %eax,%eax
+   0x00005555555551c4 <+27>:	lea    0xe3d(%rip),%rdi        # 0x555555556008
+   0x00005555555551cb <+34>:	callq  0x555555555080 <puts@plt>
+   0x00005555555551d0 <+39>:	lea    -0x70(%rbp),%rax
+   0x00005555555551d4 <+43>:	mov    %rax,%rsi
+   0x00005555555551d7 <+46>:	lea    0xe4c(%rip),%rdi        # 0x55555555602a
+   0x00005555555551de <+53>:	mov    $0x0,%eax
+   0x00005555555551e3 <+58>:	callq  0x5555555550b0 <__isoc99_scanf@plt>
+   0x00005555555551e8 <+63>:	lea    -0x70(%rbp),%rax
+   0x00005555555551ec <+67>:	mov    %rax,%rdi
+   0x00005555555551ef <+70>:	callq  0x555555555227 <trim>
+   0x00005555555551f4 <+75>:	lea    -0x70(%rbp),%rax
+   0x00005555555551f8 <+79>:	mov    %rax,%rsi
+   0x00005555555551fb <+82>:	lea    0xe2f(%rip),%rdi        # 0x555555556031
+   0x0000555555555202 <+89>:	mov    $0x0,%eax
+   0x0000555555555207 <+94>:	callq  0x5555555550a0 <printf@plt>
+--Type <RET> for more, q to quit, c to continue without paging--c
+   0x000055555555520c <+99>:	mov    $0x0,%eax
+   0x0000555555555211 <+104>:	mov    -0x8(%rbp),%rdx
+   0x0000555555555215 <+108>:	xor    %fs:0x28,%rdx
+   0x000055555555521e <+117>:	je     0x555555555225 <main+124>
+   0x0000555555555220 <+119>:	callq  0x555555555090 <__stack_chk_fail@plt>
+   0x0000555555555225 <+124>:	leaveq 
+   0x0000555555555226 <+125>:	retq   
+End of assembler dump.
 (gdb) q
 
