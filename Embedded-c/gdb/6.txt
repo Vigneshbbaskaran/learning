@@ -1,3 +1,5 @@
+heartik@Lenovo:~/programming/c/super-market/5$ gcc -g *.c
+heartik@Lenovo:~/programming/c/super-market/5$ gdb a.out
 GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
 Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -14,44 +16,83 @@ Find the GDB manual and other documentation resources online at:
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...
-(No debugging symbols found in a.out)
-(gdb) w 5
-No previous command to relaunch
-(gdb) b 10
-No symbol table is loaded.  Use the "file" command.
-(gdb) run
-Starting program: /home/heartik/programming/c/super-market/5/a.out 
-
-----------------------------------SuperMarket---------------------------------------
-
-1)Check Available Stock
-2)Sell items
-3)Purchase New item
-
-Select any one Number:
-1
-
-Available stocks: 500
-
-want to continue?? Y or N: 
-n
-
-i)Latest Stocks: 500
-ii)Total number of times sales happened: 0
-iii)Total number of items sold: 0
-ii)Total number of times purchase happened: 0
-iii)Total number of items purchased: 0
-[Inferior 1 (process 9467) exited normally]
-(gdb) b 6
-Breakpoint 1 at 0x7ffff7de8f20: file init-first.c, line 44.
-(gdb)  b main
-Breakpoint 2 at 0x5555555551a9
-(gdb) step
-The program is not being run.
+(gdb) l
+1	#include "header.h"
+2	extern int stemp,scount,ptemp,pcount;
+3	
+4	//int stocks; // initial stocks = 500, capacity = 100.
+5	
+6	
+7	
+8	int main()
+9	{
+10	char y;
+(gdb) l purchase
+1	#include "header.h"
+2	
+3	int ptemp=0,pcount=0;
+4	void purchase(int amount)
+5	{
+6		int temp,capacity=1000;
+7		int stocks;
+8		stocks = display();
+9		if (capacity >=(stocks+amount))
+10		{	
+(gdb) l sales
+1	#include "header.h"
+2	
+3	int stemp=0,scount=0;
+4	void sales(int amount)
+5	{	
+6		int stocks,temp;
+7		stocks = display();
+8		if(stocks>=amount)
+9		{	
+10			scount++;
+(gdb) l stocks
+1	#include<stdio.h>
+2	static int stocks =500;
+3	
+4	void deletestocks(int amount)
+5	{
+6	stocks= stocks - amount;
+7	}
+8	void addstocks(int amount)
+9	{
+10	stocks = stocks + amount;
+(gdb) b 2
+Breakpoint 1 at 0x15bd: file stock.c, line 5.
+(gdb) i r
+The program has no registers now.
+(gdb) b main
+Breakpoint 2 at 0x11a9: file main.c, line 9.
+(gdb) l main
+4	//int stocks; // initial stocks = 500, capacity = 100.
+5	
+6	
+7	
+8	int main()
+9	{
+10	char y;
+11	int a;
+12	int amount;
+13		do{
+(gdb) b amount
+Function "amount" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) y
+Breakpoint 3 (amount) pending.
 (gdb) i b
 Num     Type           Disp Enb Address            What
-1       breakpoint     keep y   0x00007ffff7de8f20 in __libc_init_first 
-                                                   at init-first.c:44
-2       breakpoint     keep y   0x00005555555551a9 <main>
-(gdb) q
+1       breakpoint     keep y   0x00000000000015bd in deletestocks at stock.c:5
+2       breakpoint     keep y   0x00000000000011a9 in main at main.c:9
+3       breakpoint     keep y   <PENDING>          amount
+(gdb) r 3
+Starting program: /home/heartik/programming/c/super-market/5/a.out 3
+
+Breakpoint 2, main () at main.c:9
+9	{
+(gdb) kill
+Kill the program being debugged? (y or n) y
+[Inferior 1 (process 6418) killed]
+(gdb) 
 
