@@ -1,6 +1,24 @@
 # KM40BESD01 
 
 # EMBEDDED C
+
+## Debug the below programs using gdb.
+
+### Control statements:
+ 1. gdb_sample.c: class room example program, attached this mail.   
+ 2. % grading with % as float.  
+ 3. Find biggest of n numbers, without using arrays.  
+  
+### Pointers:  
+ 4. call by value  
+ 5. call by reference  
+
+### Storage Classes/Functions:  
+ 6. Super Market  
+
+### Strings:  
+ 7. strstr() - sub string finding  
+ 
 ## Bitwise Operators Assignments:
 
 1. Write a Macro's Set, clear and toggle n'th bit using bit wise operator?
