@@ -1,9 +1,22 @@
 # KM40BESD01 
 
 # EMBEDDED C
+# 10th APRIL 2021
 
+## Write your own implementation of the below C Library functions using Keil Simulator.
+1.	atoi() – asci to integer
+2.	itoa() – integer to ascii
+3.	strlen – string length
+4.	strrev – string reverse
+5.	strcpy – string copy
+6.	strcmp – string comparison
+7.	strcat – string concatenation (append source string at the end of destination  string)
+8.	strchr – find the index of first occurrence of a character in a string
+9.	strstr –find the index of first occurrence of a substring in a string
+10.	strreplace- replace a substring with another substring of same length in a string.
+
+# 8th APRIL 2021
 ## Debug the below programs using gdb.
-
 ### Control statements
 1. gdb_sample.c: class room example program, attached this mail.   
 2. % grading with % as float.  
@@ -19,8 +32,8 @@
 ### Strings 
 7. strstr() - sub string finding  
  
+# 6th APRIL 2021
 ## Bitwise Operators Assignments
-
 1. Write a Macro's Set, clear and toggle n'th bit using bit wise operator?
 2. WAP print binary?
 3. WAP to count the bits set (bit value 1 ) in an integer? Find out and compare different possibilities?
