@@ -1,7 +1,8 @@
 void atoi(){
-	char c='c';
-	int a=c;
-	c=a;
+	char a;
+        a='1';
+        int c= a-48;
+
 	return;
 	}
 
