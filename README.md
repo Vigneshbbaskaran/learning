@@ -1,6 +1,14 @@
 # KM40BESD01 
 
 # EMBEDDED C
+# 15th APRIL 2021
+## Experiment 1: 
+Toggle RED LED (PC5) ON time is 50ms and RED LED (PC5) OFF time is 1300ms.
+
+## Experiment 2: 
+Airplane wing Lights blinking Delays: 
+USER LED1 (GREEN – PA8): ON (50msec), OFF (50msec), ON (50msec), OFF (150msec) periodically. 
+USER LED2 (RED – PC5): ON (50msec), OFF (250msec), ON (50msec), OFF (500msec) periodically.
 # 10th APRIL 2021
 
 ## Write your own implementation of the below C Library functions using Keil Simulator.
