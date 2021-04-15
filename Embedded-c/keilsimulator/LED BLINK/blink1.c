@@ -1,3 +1,9 @@
+/* Experiment 1: 
+Toggle RED LED (PC5) ON time is 50ms and RED LED (PC5) OFF time is 1300ms.
+*/
+
+
+
 #define RCC_AHB1ENR *((int *)(0X40023830))
 #define GPIOC_MODER  *((int *)(0X40020800))
 #define GPIOC_ODR    *((int *)(0X40020814))
