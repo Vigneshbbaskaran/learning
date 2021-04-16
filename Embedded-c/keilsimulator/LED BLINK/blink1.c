@@ -33,9 +33,9 @@ RED_LED_INT(); //initilization
 	
 	while(1)
 	{
-		GPIOC_ODR &= ~(0X01<<5);  //clear
+		GPIOC_ODR &= ~(0X01<<5);  //SET
 		DELAY(50);
-		GPIOC_ODR |= (0X01<<5);   //set
+		GPIOC_ODR |= (0X01<<5);   //CLEAR
 		DELAY(1300);
 		
 	}
