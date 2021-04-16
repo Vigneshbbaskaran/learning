@@ -1,12 +1,12 @@
 /*Experiment 4: 
-Use “WAKEUP SWITCH” and declare “counter” global variable. 
+Use WAKEUP SWITCH and declare counter global variable. 
 Your program should increment counter by one, every time switch is pressed.
-Note how the value of counter changes on each “WAKEUP SWITCH” press.
-Use debugger and add Counter to “Watch Expression” window. Does the value of counter increment by one always?
+Note how the value of counter changes on each WAKEUP SWITCH press.
+Use debugger and add Counter to Watch Expression window. Does the value of counter increment by one always?
 Note: Define counter as a global variable and in debug perspective use continuous refresh option 
 (You will find Continuous Refresh button on top of the Expression Window). 
 You can use step debugging or breakpoints to check the variable value. Hint: To add variable to Expression Window,
-select and right click the variable name and select “Add Watch Expression”. 
+select and right click the variable name and select Add Watch Expression. 
 To view Expression Window, click on View button from Keil menu bar and select Expressions.
 */
 #define RCC_AHB1ENR  *((int *)(0X40023830)) // ENABLE CLOCK ADDRESS
