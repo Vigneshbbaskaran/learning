@@ -37,51 +37,51 @@ RED_LED_INT();
 
 	while(1)
 	{	
-		GPIOA_ODR |= (0X01<<8); //SET PA8
-		GPIOC_ODR |= (0X01<<5); //SET PC5
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
+		GPIOC_ODR &= ~(0X01<<5); //ON PC5
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8
+		GPIOA_ODR |= (0X01<<8); //OFF PA8
 		DELAY(50);
 		
-		GPIOA_ODR |= (0X01<<8); //SET  PA8
+		GPIOA_ODR &= ~(0X01<<8); //ON  PA8
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8
-		GPIOC_ODR &= ~(0X01<<5); //CLEAR PC5
+		GPIOA_ODR |= (0X01<<8); //OFF PA8
+		GPIOC_ODR |= (0X01<<5); //OFF PC5
 		DELAY(150);
 	//	-------------------------------------------------------- 
-		GPIOA_ODR |= (0X01<<8); //SET PA8
-		GPIOC_ODR |= (0X01<<5); //SET PC5
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
+		GPIOC_ODR &= ~(0X01<<5); //ON PC5
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8
-		GPIOC_ODR &= ~(0X01<<5); //CLEAR PC8
+		GPIOA_ODR |= (0X01<<8); //ON PA8
+		GPIOC_ODR |= (0X01<<5); //ON PC8
 		DELAY(50);
 	//------------------------------------------------ 450
-		GPIOA_ODR |= (0X01<<8); //SET PA8
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8		
+		GPIOA_ODR |= (0X01<<8); //OFF PA8		
 		DELAY(50);
 		
-		GPIOA_ODR |= (0X01<<8); //SET PA8
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8		
+		GPIOA_ODR |= (0X01<<8); //OFF PA8		
 		DELAY(150);
 		
-		GPIOA_ODR |= (0X01<<8); //SET PA8
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8		
+		GPIOA_ODR |= (0X01<<8); //OFF PA8		
 		DELAY(50);
 		
-		GPIOA_ODR |= (0X01<<8); //SET PA8
+		GPIOA_ODR &= ~(0X01<<8); //ON PA8
 		DELAY(50);
 		
-		GPIOA_ODR &= ~(0X01<<8); //CLEAR PA8		
-		GPIOC_ODR &= ~(0X01<<5); //CLEAR PC8
+		GPIOA_ODR |= (0X01<<8); //OFF PA8		
+		GPIOC_ODR |= (0X01<<5); //OFF PC8
 		DELAY(50);
 	//-----------------------------------
 		
