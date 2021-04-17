@@ -52,7 +52,7 @@ SW_INT(); //initilization
 		  {
 			GPIOA_ODR &= ~(0X01<<8);  //PA8 GREEN LED ON 
 			}
-	if((GPIOC_IDR & (0x1<<8 )) && (GPIOC_IDR & (0x1<<9 )) )
+	if((GPIOC_IDR & (0x1<<8 )) && (GPIOC_IDR & (0x1<<9 )) ) // BOTH SWITCH DIDN'T PRESSED
 			{
 			GPIOA_ODR |= (0X01<<8);   //PA8 GREEN LED OFF
 			GPIOC_ODR |= (0X01<<5);   //PC5 RED LED OFF
