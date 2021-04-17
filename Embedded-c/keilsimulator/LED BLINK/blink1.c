@@ -4,9 +4,9 @@ Toggle RED LED (PC5) ON time is 50ms and RED LED (PC5) OFF time is 1300ms.
 
 
 
-#define RCC_AHB1ENR *((int *)(0X40023830))
-#define GPIOC_MODER  *((int *)(0X40020800))
-#define GPIOC_ODR    *((int *)(0X40020814))
+#define RCC_AHB1ENR *((int *)(0X40023830)) // ENABLE CLOCK ADDRESS
+#define GPIOC_MODER  *((int *)(0X40020800)) // PORT C MODER ADDRESS
+#define GPIOC_ODR    *((int *)(0X40020814)) // PORT C OUTPUT DATA REGISTER
 
 void RED_LED_INT(void)
 {
