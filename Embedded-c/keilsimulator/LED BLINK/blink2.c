@@ -4,11 +4,11 @@ USER LED1 (GREEN – PA8): ON (50msec), OFF (50msec), ON (50msec), OFF (150msec)
 USER LED2 (RED – PC5): ON (50msec), OFF (250msec), ON (50msec), OFF (500msec) periodically.
 */
 
-#define RCC_AHB1ENR *((int *)(0X40023830))
-#define GPIOC_MODER  *((int *)(0X40020800))
-#define GPIOA_MODER  *((int *)(0X40020000))
-#define GPIOC_ODR    *((int *)(0X40020814))
-#define GPIOA_ODR    *((int *)(0X40020014))
+#define RCC_AHB1ENR *((int *)(0X40023830)) // CLOCK ENABLE ADDRESS
+#define GPIOC_MODER  *((int *)(0X40020800)) // PORT C MODER ADDRESS
+#define GPIOA_MODER  *((int *)(0X40020000)) // PORT A MODER ADDRESS
+#define GPIOC_ODR    *((int *)(0X40020814)) // PORT C OUTPUT DATA REGISTER
+#define GPIOA_ODR    *((int *)(0X40020014)) // PORT A OUTPUT DATA REGISTER
 void RED_LED_INT(void)
 {
 	
