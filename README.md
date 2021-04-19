@@ -1,6 +1,15 @@
 # KM40BESD01 
 
 # EMBEDDED C
+# 18th APRIL 2021
+## Class room example:
+Write a program Request and interrupt on the falling edge of PA0 (when the user button is pressed) and
+increment a counter in the interrupt. 
+
+## Lab Assignment experiment 8: 
+Write a program Request and interrupt on the falling edge of PC8 (whenever SW1 is pressed) then toggle RED LED (PC5) and falling edge of PC9 (whenever SW2 is pressed) then toggle GREEN LED (PA8)
+increment a counter in the interrupt. 
+
 
 # 16th APRIL 2021
 ## Experiment 3: 
