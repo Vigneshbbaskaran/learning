@@ -1,3 +1,9 @@
+/*
+Lab Assignment experiment 8: 
+Write a program Request and interrupt on the falling edge of PC8 (whenever SW1 is pressed) 
+then toggle RED LED (PC5) and falling edge of PC9 (whenever SW2 is pressed) then toggle GREEN LED (PA8)
+increment a counter in the interrupt. 
+*/
 
 #define RCC_AHB1ENR *((int*)0x40023830)
 #define RCC_APB2ENR *((int*)0x40023844)
@@ -122,7 +128,7 @@ int main()
 	PortC_Red_LED_Init();
 	
 	PortC_Green_Sw_Init();
-  PortC_GREEN_Intr_Enable();
+    PortC_GREEN_Intr_Enable();
 	PortA_Green_LED_Init();
 	
 	
