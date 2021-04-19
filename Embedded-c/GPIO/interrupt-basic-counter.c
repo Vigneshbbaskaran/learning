@@ -1,3 +1,7 @@
+/*Write a program Request and 
+interrupt on the falling edge of PA0 (when the user button is pressed) 
+and increment a counter in the interrupt. 
+*/
 #define SYSCFG_EXTICR1  *((int *)(0X40013808))
 #define EXTI_IMR        *((int *)(0X40013C00))
 #define EXTI_FTSR       *((int *)(0X40013C0C))
