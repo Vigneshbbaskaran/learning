@@ -1,3 +1,13 @@
+/*Experiment 9:
+Toggles PC5 (RED LED) every 100msec delay
+using SysTick timer With Polling using 16MHZ  system clock source. 
+And also test minimum and maximum delays of 16MHZ timer.
+*/
+
+
+
+
+
 #define RCC_AHB1ENR  *((int *)(0X40023830))
 #define GPIOC_MODER  *((int *)(0X40020800))
 #define GPIOC_ODR    *((int *)(0X40020814))
