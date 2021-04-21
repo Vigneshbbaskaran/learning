@@ -26,7 +26,6 @@ void RED_LED_INT(void)
 
 void sys_tick_int(void)
 	{
-STK_LOAD  = 160000; // 100msec  
 STK_VAL   = 10; // GARBAGE VALUE
 STK_CTRL |= 0X07;  // 16MHZ
   }
@@ -41,7 +40,7 @@ void DELAY(int a)
 }*/
 void delay(int a)
 {
-STK_LOAD  = 1600*a; // 1msec * a
+STK_LOAD  = 16000*a; // 1msec * a
 	while(!(STK_CTRL & 0X10000)) // wait untill 100msec dealy
 		{
 			;
