@@ -29,7 +29,6 @@ void RED_LED_INT(void)
 
 void sys_tick_int(void)
 	{
-STK_LOAD  = 160000; // 100msec  
 STK_VAL   = 10; // GARBAGE VALUE
 STK_CTRL |= 0X05;  // 16MHZ
   }
