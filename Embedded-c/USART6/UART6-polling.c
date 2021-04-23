@@ -25,7 +25,7 @@ STK_LOAD  = 16000*b; // 1milisec * b
 void sys_tick_int(void)
 	{ 
 STK_VAL   = 10; // GARBAGE VALUE
-STK_CTRL |= 0X07;  // 16MHZ
+STK_CTRL |= 0X05;  // 16MHZ
   }
 	
 void UART6_int(void)
