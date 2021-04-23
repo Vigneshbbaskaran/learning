@@ -69,7 +69,7 @@ return UART6_DR;
 char a,b;
 int main()
 {
-	b='C';
+	b='A';
 UART6_int();
 UART6_config();
 	while(1)
