@@ -74,7 +74,7 @@ UART6_int();
 UART6_config();
 	while(1)
 	{
-		UART6_OUTCHAR(a);
+		UART6_OUTCHAR(b);
 		a=UART6_INCHAR();
 		
 
