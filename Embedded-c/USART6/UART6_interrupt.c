@@ -13,7 +13,7 @@
 #define STK_LOAD  *((int *)(0XE000E014))
 #define STK_VAL   *((int *)(0XE000E018))
 
-#define NVIC_ISER2 *(( int *)(0xE000E15C))
+#define NVIC_ISER3 *(( int *)(0xE000E15C))
 void delayms(int b)
 {
 	STK_VAL   = 10; // GARBAGE VALUE
@@ -41,7 +41,7 @@ void UART6_int(void)
 	RCC_APB2ENR |= (0x1<<5);
 	while(!(RCC_APB2ENR & (0x1<<5)));
 	
-	NVIC_ISER2 |=(0x1<<7); // interrupt enable
+	NVIC_ISER3 |=(0x1<<7); // interrupt enable
 	UART6_CR1 |=(0x1<<5);//RXNEIE
 	UART6_CR1 |=(0x1<<7);//TXEIE 
 	
