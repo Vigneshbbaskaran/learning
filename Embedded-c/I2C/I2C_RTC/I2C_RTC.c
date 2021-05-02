@@ -219,7 +219,7 @@ if((I2C1_SR1 & 0x2))
 
 	
 		
-		//	while(!(I2C1_SR1 & (0x1<<6))){;}//wait until rxne bit is set
+			while(!(I2C1_SR1 & (0x1<<6))){;}//wait until rxne bit is set
 		
 	   data[time]= BCD_2_DEC(I2C1_DR) ; 	
 	
