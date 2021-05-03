@@ -22,16 +22,33 @@
 #define I2C1_SR1    *((int*)(0X40005414))
 #define I2C1_SR2    *((int*)(0X40005418))
 #define I2C1_DR     *((int*)(0X40005410))
+	//---------------------------------sw---------------------------------------------
+#define GPIOC_MODER  *((int *)(0X40020800))
+#define GPIOC_IDR    *((int *)(0X40020810))
+#define GPIOC_PUPDR  *((int *)(0X4002080C))
+	void SW_INT(void)
+{
+	
+	RCC_AHB1ENR |=(0x4); // enable PORT C 
+	while(!(RCC_AHB1ENR & 0x4))
+	{
+		;
+	}
+	GPIOC_PUPDR &= ~(0X3<<18); // CLEAR PULL UP
+	GPIOC_PUPDR |= (0X1<<18); // SET PULL UP
+	
+}
+
   int i=0,clear=0,slave=0;
 		int data[7];
 char print[50];
 
 //--------------------------------------------BCD------------------------------------------
 int Buff[]=	{   13, //sec     7th bit ch=0
-								15, //min 		
-								23, // hr 
-								7, //week day
-								2, //date
+								07, //min 		
+								10, // hr 
+								1, //week day
+								3, //date
 								5, //month
 								21, //year
 							//	93  //control bit 1--> RS0 bit2-->RS1 bit4-->SQWE bit7--->OUT 
@@ -175,12 +192,12 @@ I2C1_CR1 &=~(0x1<<10); // clear AF
 }
 
 
-void I2C1_Read(int time)
+void I2C1_Read()
 {
 	I2C1_CR1 &= ~(0x1); //PE disable
-  I2C1_CR1 |= (0x1<<10); //ACK
+ 
 	I2C1_CR1 |=0x1; //PE
-	
+	 I2C1_CR1 |= (0x1<<10); //ACK
 
 	while((I2C1_SR2 & 0x2)); //busy
 I2C1_CR1 |=(0x1<<8);//start condition
@@ -200,7 +217,7 @@ if((I2C1_SR1 & 0x2))
 }
     while(!(I2C1_SR1 & (0x1<<7))){;}//wait until txe bit set
 		
-	    I2C1_DR = time; //address
+	    I2C1_DR = 0x00; //address
 			I2C1_CR1 |= (0x1<<8); //Restart
 			while((I2C1_SR1 & (0x1))==0); //SB
 				clear =	I2C1_SR1;// clear SB
@@ -215,14 +232,14 @@ if((I2C1_SR1 & 0x2))
 		clear = I2C1_SR2;	
 }
 	LCD_WRITE_COMREG(0x01);//clear screen
-		LCD_WRITE_COMREG(0x80); //SET CURSOR POSITION
-
+		LCD_WRITE_COMREG(0x80); //SET CURSOR POSITION 
+for(i=0;i<7;i++)
+{
 	
+while(!(I2C1_SR1 & (0x1<<6))){;}//wait until rxne bit is set
 		
-			while(!(I2C1_SR1 & (0x1<<6))){;}//wait until rxne bit is set
-		
-	   data[time]= BCD_2_DEC(I2C1_DR) ; 	
-	
+	   data[i]= BCD_2_DEC(I2C1_DR) ; 	
+}
 		I2C1_CR1 &=~(0x1<<10); 
 		
 		 I2C1_CR1 |=(0x1<<9);//stop		
@@ -230,21 +247,21 @@ if((I2C1_SR1 & 0x2))
 
 void RTC_CLOCK_DISPLAY()
 {
-		I2C1_Read(0x00);
-		I2C1_Read(0x01);
-		I2C1_Read(0x02);
-		I2C1_Read(0x03);
-		I2C1_Read(0x04);
-		I2C1_Read(0x05);
-		I2C1_Read(0x06);
-		I2C1_Read(0x07);
+		//I2C1_Read(0x00);
+		//I2C1_Read(0x01);
+	//	I2C1_Read(0x02);
+	//	I2C1_Read(0x03);
+	//	I2C1_Read(0x04);
+	//	I2C1_Read(0x05);
+	//	I2C1_Read(0x06);
+	//	I2C1_Read(0x07);
 		LCD_WRITE_COMREG(0x01);//clear screen
 		LCD_WRITE_COMREG(0x80); //SET CURSOR POSITION
 		 LCD_WRITE_Value(data[0]);
 	LCD_WRITE_STRING(":");
 		 LCD_WRITE_Value(data[2]);
 	LCD_WRITE_STRING(":");
-		 LCD_WRITE_Value(data[3]);
+		 LCD_WRITE_Value(data[1]);
 			LCD_WRITE_COMREG(0xC0); //SET CURSOR POSITION
 		//LCD_WRITE_STRING(" d ");
 		 LCD_WRITE_Value(data[4]);
@@ -257,7 +274,7 @@ void RTC_CLOCK_DISPLAY()
 
 int main()
 {
-	
+	SW_INT();
 	sys_tick_int();
 	PortB_Init(); // For LCD
 	LCD_INITIALIZATION(); //INT LCD
@@ -266,12 +283,19 @@ int main()
 	
 	I2C1_Initilization();
 	I2C1_Configuration();
- 
- I2C1_write();
+
+
 	while(1)
 	{
-		RTC_CLOCK_DISPLAY();
-		delayms(500);
+		 if(!(GPIOC_IDR & (0x1<<9 )) )
+			{
+			 I2C1_write();
+			
+			}
+			I2C1_Read();
+			RTC_CLOCK_DISPLAY();
+	  	delayms(500);
+			delayms(500);
 	}
 	
 }
