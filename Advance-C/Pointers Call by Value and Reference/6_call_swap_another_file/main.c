@@ -1,3 +1,5 @@
+//6. Write two source files, main.c and swap.c. The main function initializes a two-element array of ints, and then calls the swap function to swap the pair.
+
 #include<stdio.h>
 void swap(int *p);
 int main()
