@@ -1,3 +1,5 @@
+//10. Write a program similar to strrev.
+
 #include<stdio.h>
 void reverse(char a[10]);
 int main()
