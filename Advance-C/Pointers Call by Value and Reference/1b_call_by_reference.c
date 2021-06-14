@@ -1,5 +1,5 @@
-/* 1)Write a program to swap two numbers using Call by Reference
-*/
+//1)Write a program to swap two numbers using Call by Reference
+
 #include<stdio.h>
 void swap1(int *a, int *b);
 int main()
@@ -25,8 +25,5 @@ void swap1(int *a,int *b)
 	*a=*b;
 	*b=temp;
 
-
-
-	return;
 }
 
