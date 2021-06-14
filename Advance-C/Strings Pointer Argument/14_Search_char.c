@@ -1,3 +1,4 @@
+//14. Write a program similar to strchr.
 #include<stdio.h>
 int find(char *a,char c);
 int main()
