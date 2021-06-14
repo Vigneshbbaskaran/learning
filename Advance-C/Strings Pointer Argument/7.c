@@ -1,5 +1,5 @@
 /*
-1.string-length
+7.string-length
 */
 #include<stdio.h>
 int strlen (char *st1);
