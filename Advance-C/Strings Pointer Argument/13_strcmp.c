@@ -1,3 +1,4 @@
+//13. Write a program similar to strcmp.
 #include<stdio.h>
 int cmp(char a[10],char b[10]);
 int main()
