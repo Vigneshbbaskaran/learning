@@ -1,3 +1,6 @@
+//2. Write a program to add two variables using thier pointers indirection.
+
+
 #include<stdio.h>
 int main()
 {
