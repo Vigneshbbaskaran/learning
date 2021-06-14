@@ -1,3 +1,7 @@
+//4. Declare 3 integer variables. Declare an integer pointer. 
+//Assign the address of each variable to the pointer in succession and print the value of the variable using indirection operator on the pointer.
+
+
 #include<stdio.h>
 int main()
 {
