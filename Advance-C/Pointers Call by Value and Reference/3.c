@@ -1,3 +1,5 @@
+//3. Write a function that can rotate the values of three variables. print the results in main function.
+
 #include<stdio.h>
 void swap(int *x,int *y,int *z);
 int main()
