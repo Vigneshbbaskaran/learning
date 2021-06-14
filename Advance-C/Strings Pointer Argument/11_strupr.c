@@ -1,3 +1,4 @@
+//11. Write a program similar to strupr.
 #include<stdio.h>
 void lower(char *str);
 int main()
