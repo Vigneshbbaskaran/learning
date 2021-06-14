@@ -1,3 +1,5 @@
+//12. Write a program similar to strlwr.
+
 #include<stdio.h>
 void lower(char str[10]);
 int main()
