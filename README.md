@@ -1,5 +1,40 @@
 # KM40BESD01 VIGNESH BASKARAN
 # Advance C
+
+# Strings Pointer Argument
+## 01st June 2021
+
+1. Write a function that takes a string as an input, and count the number of words in the string, and returns the number,
+2. Write a function that takes a string as input, and determines whether the string is a palindrome or not, returns 1 or 0.
+3. Write a function to replace a given character by another character in a string. The function takes one string, and 2 characters as input.
+4. Write a program to display the word expansion of a number.
+
+    Eg., 
+    Input : 789
+    Output : Seven Eight Nine
+
+5. Write a trim() function,that will remove the leading and trailing spaces from a string.
+
+    Eg.,    
+    Input : "    str  str   "  
+    Output : "str str  
+
+6. Write a function called strstr that takes 2 strings as input, finds the first occurrence of second string, in the first string, and returns the index from where it starts in the first string. If the string is not found, returns -1.
+
+    Eg.,     
+    Kernel Masters  
+    Mast  
+    output : 7  
+
+7. Write a program similar to strlen.
+8. Write a program similar to strcpy.
+9. Write a program similar to strcat.
+10. Write a program similar to strrev.
+11. Write a program similar to strupr.
+12. Write a program similar to strlwr.
+13. Write a program similar to strcmp.
+14. Write a program similar to strchr.
+
 # Pointers Call by Value and Reference
 ## 30th May 2021
 
