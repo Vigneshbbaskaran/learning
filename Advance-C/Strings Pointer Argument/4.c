@@ -1,4 +1,4 @@
-4)WAP to display the word expansion of a number
+/*4)WAP to display the word expansion of a number
 eg., Input : 789
 Output : Seven Eight Nine
 */
