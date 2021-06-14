@@ -18,6 +18,6 @@
 # When we use Call By Value	?
         * when there is no need to modify the passing variables. just perform some operation and return single value then we go for Call By Value.
         
-#When we use Call By Reference ?
+# When we use Call By Reference ?
         * when there is need to modify the passing variables. then go for call by reference.
         * if we passing array of elements then we can go Call By Reference, because it holds the base address of array instead of holding the entire array. 
