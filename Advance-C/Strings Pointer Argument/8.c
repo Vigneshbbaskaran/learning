@@ -1,3 +1,4 @@
+//8. Write a program similar to strcpy.
 
 #include<stdio.h>
 void strcpy1(char st1[10],char st2[10]);
