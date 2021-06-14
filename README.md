@@ -1,6 +1,84 @@
-# KM40BESD01 
+# KM40BESD01 VIGNESH BASKARAN
+
 
 # EMBEDDED C
+
+# 7th May 2021
+## IoT Project – Real Time Smart Weather Monitoring System
+
+1. Write an Embedded C program for below 
+tasks.
+ * Task 1: Read date and time from DS1307 RTC and write in to LCD every 1 sec delay.
+ * Task 2: Read temperature value from LM35 Temperature sensor every 5 sec delay.
+ * Task 3: Write temperatur evalue along with time stamp in to EEPROM whenever internet is not working.
+ * Task 4: Write temperature value into LCD and send to Kernel Masters web server using ESP8266 Wi-Fi Module.
+
+# 29th April 2021
+## I2C Communication Protocol
+
+1. Write a Pseudo code, draw flow chart and write Embedded C Program to scan I2C devices and show the list of founded devices? Use Polling method. Set I2C clock frequency 100KHZ & Master mode.
+2. Write a Pseudo code, draw flow chart and write Embedded C Program to Write current date and time in RTC and read same date from RTC using I2C1 Controller?  
+Use Polling method. Set I2C clock frequency 100KHZ & Master mode.
+3. Write a Pseudo code, draw flow chart and write Embedded C Program to Write “Kernel Masters” in to EEPROM device and read “Kernel Maters” from EEPROM using I2C1 Controller?  Use Polling method. Set I2C clock frequency 100KHZ & Master mode.
+
+# 26th April 2021
+## IoT Project - Smart Weather Monitoring System (or) Smart Data Logger
+
+1. Write an Embedded C program and read temperature value from LM35 Temperature sensor every 5 sec delay and send to LCD and Kernel Masters web server.  
+
+# 25th April 2021
+## USART Communication Protocol-3
+
+1. Write an Embedded C program and send temperature, humidity and device ID to Kernel Masters server using UART1 communication protocol. Configure UART1 to 115200 8N1.
+
+# 23rd April 2021
+## USART Communication Protocol-2
+
+1. USART Polling : Write an Embedded C program to configure UART6 to 9600 8N1 and transmit character 'A' and receive same character using loopback method. Do the following config.
+ * System clock initialization.
+ * 9600 8N1
+ <pre>
+    Assign a hardware breakpoint in UART1_ISR and run program. Send 'A' from Tera term application.
+ </pre>
+2. USART Interrupt : Write a Pseudo code and Embedded C program to USAR6 Configuration using the below conditions.
+ * System Clock Initialization to 16MHZ
+ * 9600 8N1  (1+8+0+1=10 bits)
+ <pre>
+    Assign a hardware breakpoint in UART1_ISR and run program. Send 'A' from Tera term application. Verify result in ISR.
+ </pre>
+3. Develop communication between two Raayan Mini boards using UART6 protocol. The switches (PC9 and PC8) are inputs. LED (PC5 and PA8) are outputs, UART to communicate.
+
+# 22nd April 2021
+## USART Communication Protocol
+
+1. Write an Embedded C program to configure USART6 to 9600 8N1 and transmit 'A' and receive the same using the loopback method.
+
+# 21st April 2021
+## ADC_Temp_Sensor
+
+1. Write an Embedded C program to initialize ADC Single Conversion mode. Using regular channel software trigger, sample ADC channel 10 and store result to global variable that can be accessed with ST-Link Debugger.
+    * Polling Method
+    * Interrupt Method
+2. Write an Embedded C program to read temperature value from ADC channel 0 and send data into LCD with degree centigrade.
+
+# 20th April 2021
+## Sys Tick Timer
+
+1. Toggles PC5 (RED LED) every 100msec delay using SysTick timer With Polling using 16MHZ  system clock source. And also test minimum and maximum delays of 16MHZ timer.
+2. Toggles PC5 (RED LED) every 100msec delay using SysTick timer With Interrupt using 16MHZ system clock source.
+3. Implement delay generic functions using 16MHZ SysTick timer with polling method. 
+<pre>
+    Void KM_Delayms(int );
+    Void KM_Delayus(int );
+</pre>
+
+# 19th April 2021
+## LCD Display
+
+1. Print characters on LCD Display.
+2. Print a string on LCD Display.
+
+
 # 18th APRIL 2021
 ## Class room example:
 Write a program Request and interrupt on the falling edge of PA0 (when the user button is pressed) and
