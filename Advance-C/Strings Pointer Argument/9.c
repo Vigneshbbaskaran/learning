@@ -1,3 +1,4 @@
+//9. Write a program similar to strcat.
 #include<stdio.h>
 void strcat1(char s1[20], char s2[20]);
 int main()
