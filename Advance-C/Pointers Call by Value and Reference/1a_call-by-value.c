@@ -1,6 +1,5 @@
-/*
-1)Write a program to swap two numbers using Call by Value.
-*/
+//1)Write a program to swap two numbers using Call by Value.
+
 #include<stdio.h>
 void swap1(int a, int b);
 int main()
