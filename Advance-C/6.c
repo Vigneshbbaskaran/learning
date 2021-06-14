@@ -1,3 +1,8 @@
+//6. declare different pointers with different data types. 
+//Print the sizes of the pointer variables using sizeof operator. 
+//Why do u think all of them are giving same size irrespective of the data type ?
+
+
 #include<stdio.h>
 int main()
 {
