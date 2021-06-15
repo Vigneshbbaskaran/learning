@@ -1,3 +1,13 @@
+/*2. Declare a two dimensional array of elements and write a function to take it as argument and print its transpose.
+<pre>
+eg., if the matrix is:      1 3
+                                4 5
+                                7 8<br>
+its transpose should be :   1 4 7
+                                3 5 8
+</pre>
+*/
+
 #include<stdio.h>
 int main()
 {
