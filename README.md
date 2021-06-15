@@ -1,6 +1,30 @@
 # KM40BESD01 VIGNESH BASKARAN
 # Advance C
 
+# 2D Arrays
+## 2nd June 2021
+
+1. Declare a two dimensional array of elements for sales details of a store, for each item sold by sales man. Take the sales values as input and print the array in matrix form.
+<pre>
+    Find out and print the following :
+    1.Total sales by each sales man
+    2.Total sales for a item
+    3.Total sales
+</pre>
+2. Declare a two dimensional array of elements and write a function to take it as argument and print its transpose.
+<pre>
+eg., if the matrix is:      1 3
+                                4 5
+                                7 8<br>
+its transpose should be :   1 4 7
+                                3 5 8
+</pre>
+3. Write a program  for matrix addition and subtraction.
+4. Write a program  for matrix multiplication.
+5. Write a function to search for an element in a two dimentional array, and return its position - as row and column numbers(2 return values). Print the indexes in a message like below, with appropriate subscripts:
+The item you were searching for was found in 3nd row, 2nd column.
+6. Declare a two dimensional array of characters, read names from the user and print them back using nested loops, character by character.
+
 # Strings Pointer Argument
 ## 01st June 2021
 
