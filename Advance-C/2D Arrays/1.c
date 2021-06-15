@@ -1,3 +1,12 @@
+/*
+1.Declare a two dimensional array of elements for sales details of a store, 
+for each item sold by sales man. Take the sales values as input and print the array in matrix form.
+
+Find out and print the following :
+1.Total sales by each sales man
+2.Total sales for a item
+3.Total sales
+*/
 #include<stdio.h>
 int main()
 {
