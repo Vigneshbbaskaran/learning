@@ -1,7 +1,7 @@
 # KM40BESD01 VIGNESH BASKARAN
 # Advance C
 # Sorting
-## 03th june 2021
+## 3th june 2021
 
 1. Perform Bubble Sort.
 2. Perform Bubble Sort on names.
