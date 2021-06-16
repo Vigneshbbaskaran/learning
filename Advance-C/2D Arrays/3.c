@@ -1,3 +1,4 @@
+//3. Write a program  for matrix addition and subtraction.
 #include<stdio.h>
 int main()
 {
