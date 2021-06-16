@@ -1,3 +1,5 @@
+//5. Write a function to search for an element in a two dimentional array, and return its position - as row and column numbers(2 return values). Print the indexes in a message like below, with appropriate subscripts:
+//The item you were searching for was found in 3nd row, 2nd column.
 #include<stdio.h>
 int main()
 {
