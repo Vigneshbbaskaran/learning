@@ -1,3 +1,4 @@
+//6. Declare a two dimensional array of characters, read names from the user and print them back using nested loops, character by character.
 #include<stdio.h>
 void main()
 {
