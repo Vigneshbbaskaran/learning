@@ -1,6 +1,34 @@
-//5. Write a function to search for an element in a two dimentional array, and return its position - as row and column numbers(2 return values). Print the indexes in a message like below, with appropriate subscripts:
-//The item you were searching for was found in 3nd row, 2nd column.
 #include<stdio.h>
+int r,c;
+int search(int a[][5],int temp)
+{
+	
+	int i,j,flag=0;
+	for(i=0;i<7;i++)
+	{
+		for(j=0;j<5;j++)
+		{
+			if(temp==a[i][j])
+			{
+				flag=1;
+				r=i;
+				c=j;
+			printf("1");
+				return 0;
+			}
+		}
+		if(flag==1)
+		printf("\n");
+	}
+		if(flag==0)
+		{
+			r=-1;
+			c=-1;
+			printf("2");
+		}
+		return 0;
+
+}
 int main()
 {
 	int a[][5]={{1,2,3,4,5},
@@ -12,23 +40,14 @@ int main()
 		    {1,2,3,4,5}};
 	
 
-	int i,j,temp,flag=0;
+	int temp;
 	printf("Enter a element for search:\n");
 	scanf("%d",&temp);
-	for(i=0;i<((sizeof(a))/(5*(sizeof(int))));i++)
-	{
-		for(j=0;j<5;j++)
-		{
-			if(temp==a[i][j])
-			{
-				flag=1;
-				printf("Found at %drow and %dcolumn\n",i,j);
-			}
-		}
-		if(flag==1)
-		printf("\n");
-	}
-		if(flag==0)
-			printf("NOT FOUND\n");
-
+	search(a,temp);
+	
+	if(r!=-1)
+		printf("\n Found at %drow and %dcolumn\n",r,c);
+	if(r==-1)	
+		printf("\n Not Found!\n");
 }
+
