@@ -1,5 +1,12 @@
 # KM40BESD01 VIGNESH BASKARAN
 # Advance C
+# Sorting
+## 03th june 2021
+
+1. Perform Bubble Sort.
+2. Perform Bubble Sort on names.
+3. Perform Bubble Sort on character pointers that are pointing to strings on read-only memory.
+4. Perform bubble sort on command line arguments. Sort every argument according to their alphabetical order.
 
 # 2D Arrays
 ## 2nd June 2021
