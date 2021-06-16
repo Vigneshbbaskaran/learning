@@ -1,3 +1,4 @@
+//4. Perform bubble sort on command line arguments. Sort every argument according to their alphabetical order.
 #include<stdio.h>
 #include<string.h>
 void main(int argc,char **argv)
