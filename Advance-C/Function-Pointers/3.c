@@ -1,3 +1,12 @@
+/*
+3	"Write the calculator program using a function that accepts a function pointer as argument and invokes it.
+eg., fptr = ADD;
+calculator(fptr);
+calculator(int (*fptr) (int,int))
+{
+printf(""%d\n"",fptr(3,4));
+}"
+*/
 #include<stdio.h>
 
 int add1(int a,int b)
