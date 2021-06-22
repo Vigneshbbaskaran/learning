@@ -42,3 +42,4 @@ int main()
         (*rem)(a,b);
 
 }
+
