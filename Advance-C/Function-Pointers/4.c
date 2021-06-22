@@ -1,3 +1,10 @@
+/*
+4      Write a program to read and print an integer using scanf and printf function pointers.
+scanf and printf declarations are given below:
+int printf(const char *,...);
+int scanf(const char *,...);
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 int main()
