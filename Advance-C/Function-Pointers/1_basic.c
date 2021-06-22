@@ -1,3 +1,5 @@
+//1	Write the calculator program using function pointers.
+
 #include<stdio.h>
 void add1(int a,int b)
 {
