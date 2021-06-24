@@ -13,7 +13,7 @@ void main()
 {
 	int i,j,k=0;
 	char *a=NULL;
-	char name[][10]={"heelllow","null","boo","second"};
+	char name[4][10];
 	char *p[4]={NULL,NULL,NULL,NULL};
 	for(i=0;i<4;i++)
 		p[i]=&name[i][0];
