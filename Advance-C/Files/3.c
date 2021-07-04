@@ -1,3 +1,7 @@
+/*
+3) Read the contents of a file and copy to another file.
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
