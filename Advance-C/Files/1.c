@@ -1,3 +1,7 @@
+/*
+1) keep reading numbers from user, and write those numbers to a file. Once user presses -1, stop reading, and print all the contents of the file. 
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
