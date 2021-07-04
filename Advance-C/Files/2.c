@@ -1,3 +1,7 @@
+/*
+2) Open the file  in append mode, and write new numbers to it, and print entire content of the file.
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
