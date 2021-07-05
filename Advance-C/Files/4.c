@@ -1,3 +1,6 @@
+/*
+4) Create a new file using contents of two files.(append one file content to another, and write to a third file).
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
