@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {	
 
-	char buff[20];
+	char buff;
 	int fs,fd,i,j=1;
 	fd=open(argv[argc-1],O_CREAT|O_RDWR|O_TRUNC,0666);
 	for(i=1;i<argc-1;i++)
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		}
 		while(j!=0)
 		{
-			j=read(fs,buff,1);
+			j=read(fs,&buff,1);
 			if(j<0)
 			{
 				perror("Read fails..!!");
@@ -31,9 +31,8 @@ int main(int argc, char *argv[])
 			{
 				break;
 			}
-			write(fd,buff,1);
-			write(1,buff,1);
-			printf("\td:%d",argc);	
+			write(fd,&buff,1);
+			write(1,&buff,1);
 		}
 		close(fs);
 	}
