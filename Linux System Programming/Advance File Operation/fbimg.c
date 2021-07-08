@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		{	perror("error");
 			_exit(1);
 		}
-		if(i%4)		
+		if(i%4==0)		
 		*(fbbuf+i) = 0x00; 
 		else
 		*(fbbuf+i) = buff; 
