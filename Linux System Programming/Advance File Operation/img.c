@@ -45,9 +45,9 @@ for (i=off; i<(fbsize)-40; )
 	temp=read(fd,&buff,4);
 	if(temp<=0)
 		break;	
-	i ++;
-
-
+	
+*((u_int32_t *)fbbuf + i) = (u_int32_t)buff;
+i++;
 }
 munmap(fbbuf, fbsize);
 }
