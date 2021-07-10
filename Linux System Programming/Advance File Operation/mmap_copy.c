@@ -6,22 +6,6 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 
-void myMemCpy(void *dest, void *src, size_t n)
-{
-	int i=0;
-   // Typecast src and dest addresses to (char *)
-   char *csrc = (char *)src;
-   char *cdest = (char *)dest;
- 
-   // Copy contents of src[] to dest[]
-   //for (i=0; i<n; i++)
-     //  cdest[i] = csrc[i];
-   for (i=0; i<n; i++){
-       *cdest = *csrc;
-	cdest++;
-	csrc++;
-	}
-}
 
 int main(int argc,char *argv[])
 {
@@ -54,17 +38,13 @@ int main(int argc,char *argv[])
 	buff2 = (char *) mmap(0,temp.st_size,PROT_READ|PROT_WRITE,MAP_SHARED,fd2,0);
 	temp1=buff1;
 	temp2=buff2;
-	getchar();
-	for(i=0;i<=temp.st_size;i++) {
-		//printf("%c",*buff1);
+	for(i=0;i<=temp.st_size;i++) 
+	{
+	
 		*buff2 = *buff1;
 		buff1++;
 		buff2++;
 	}
-        //memcpy(buff2,buff1,4);
-        //myMemCpy(buff2,buff1,4);
-//        printf("%s\n",buff2);	
-
 	munmap(temp1,temp.st_size);
 	munmap(temp2,temp.st_size);
 	close(fd1);
