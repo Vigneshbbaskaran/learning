@@ -45,15 +45,6 @@ for (i=off; i<(fbsize)-40; )
 	temp=read(fd,&buff,4);
 	if(temp<=0)
 		break;	
-
-	/**(fbbuf+i) = 0x00; // BLUE
-	i++;
-	*(fbbuf+i) = 0x00; // GREEN
-	i++;
-	*(fbbuf+i) = 0xFF; // RED
-	i++;
-	*(fbbuf+i) = 0x00;
-	i++;*/
 	i ++;
 
 
