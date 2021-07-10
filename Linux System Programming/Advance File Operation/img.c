@@ -20,7 +20,7 @@ if ((fbfd = open("/dev/fb0", O_RDWR)) < 0) {
 	exit(1);
 }
 
-/* Get variable display parameters */
+
 if (ioctl(fbfd, FBIOGET_VSCREENINFO, &vinfo)) {
 	printf("Bad vscreeninfo ioctl\n");
 	exit(2);
