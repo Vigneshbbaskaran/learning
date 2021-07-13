@@ -12,11 +12,11 @@ void main(int argc, char *argv[]) //command line input
         pid_t pid;
 	int ret,status,i;
 
-        for(i=1;i<argc;i++)
+        for(i=1;i<argc;i++) //eliminate the binary file
         {
               (argv[i-1])=(argv[i]);
 //                printf("%s\n",argv[i-1]);
-	    }
+	   }
 	strcat(a,argv[0]);
 //	printf("%s\n",a);
 	pid = fork();
