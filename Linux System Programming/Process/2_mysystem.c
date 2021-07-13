@@ -5,7 +5,8 @@
 #include<sys/wait.h>
 #include<string.h>
 
-void main(int argc, char *argv[])
+void main(int argc, char *argv[]) //command line input
+
 {
         char a[100]="/bin/";
         pid_t pid;
