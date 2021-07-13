@@ -15,13 +15,13 @@ void main(int argc, char *argv[])
         {
               (argv[i-1])=(argv[i]);
                 printf("%s\n",argv[i-1]);
-	}
+	    }
 	strcat(a,argv[0]);
 //	printf("%s\n",a);
 	pid = fork();
 	if (pid == 0)
 	{
-		printf("children\n");
+	
 		ret = execve(a,argv,NULL);
 		if(ret == -1)
 		perror("execve fails");
@@ -29,7 +29,6 @@ void main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("parent\n");
 		wait(&status);
 	}
 }
