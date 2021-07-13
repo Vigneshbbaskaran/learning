@@ -15,7 +15,7 @@ void main(int argc, char *argv[]) //command line input
         for(i=1;i<argc;i++)
         {
               (argv[i-1])=(argv[i]);
-                printf("%s\n",argv[i-1]);
+//                printf("%s\n",argv[i-1]);
 	    }
 	strcat(a,argv[0]);
 //	printf("%s\n",a);
