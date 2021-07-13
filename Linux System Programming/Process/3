@@ -1,0 +1,7 @@
+how to create a new process?
+    A new process can be created by the fork() system call. 
+    The new process consists of a copy of the address space of the original process. 
+    fork() creates new process from existing process. Existing process is called the parent process and the process is created newly is called child process. 
+    The function is called from parent process. Both the parent and the child processes continue execution at the instruction after the fork(),
+    the return code for the fork() is zero for the new process,
+    whereas the process identifier of the child is returned to the parent.
