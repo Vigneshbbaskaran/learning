@@ -1,0 +1,18 @@
+Process Management System Calls:
+
+        *getpid() , getppid() : shows current pid & parents pid numbers.
+        
+        execve(): Replacing a process image.
+        execve("/bin/ls", argv, envp);
+        
+                    int execl (const char *path, const char *arg0, ..., (char *)0);
+                    int execlp (const char *file, const char *arg0, ..., (char *)0);
+                    int execle (const char *path, const char *arg0, ..., (char *)0, char *const envp[]);
+                    int execv (const char *path, char *const argv[]); //basic syscall
+                    int execvp (const char *file, char *const argv[]);
+                    int execve (const char *path, char *const argv[], char *const envp[])
+
+        
+        *fork(): Duplicating a process image.
+        *exit(): process termination.
+        *Wait(): wait for children process exit status.
