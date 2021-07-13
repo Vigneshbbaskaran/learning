@@ -1,0 +1,11 @@
+1.  what is zombie process?
+
+    A zombie process is a process whose execution of child process is completed, 
+    and parent still thinking the child is executing. Parent process never ends.
+    
+    
+2. what is orphan process?
+
+    Orphan processes are those processes that are still running even though their parent process has terminated or finished
+    
+    
