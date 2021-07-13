@@ -10,13 +10,18 @@ int main(int argc,char **argv)
 	if(argc==2)
 	pid=atoi(argv[1]);
 	else if(argc<2)
+	{
 		printf("enter Proper argument");
-	else if(argc>2)
+		return 1;
+	}
+	else if(argc==3)
 	{	id=atoi(argv[1]);
 		id*=(-1);
 		printf("%d\n",id);	
 		pid=atoi(argv[2]);
 	}
+	else if(argc>3)
+		return 1;
 	printf("%d\n",pid);
 	kill(pid, 9);
 
