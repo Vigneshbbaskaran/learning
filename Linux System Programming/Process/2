@@ -1,0 +1,16 @@
+
+1. fork() :
+        Fork() is system call which is used to create new process. 
+        New process created by fork() system call is called child process and process that invoked fork() system call is called parent process.
+        Code of child process is same as code of its parent process. Once child process is created,     
+        both parent and child processes start their execution from next statement after fork() and both processes get executed simultaneously.
+
+2. vfork() :
+        Vfork() is also system call which is used to create new process.
+        New process created by vfork() system call is called child process and process that invoked vfork() system call is called parent process.
+        Code of child process is same as code of its parent process. 
+        Child process suspends execution of parent process until child process completes its execution as both processes share the same address space.
+
+3. exec()
+        The exec family of functions replaces the current running process with a new process.
+        It can be used to run a C program by using another C program
