@@ -1,0 +1,7 @@
+
+3. Do you have any idea about thread safe? How can you implement it?
+
+    If we run multiple threads then there no conflict and thread should works fine.
+    
+    If  references variables scope within that thread 
+    then it is thread safe because each thread has its own stack
