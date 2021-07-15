@@ -1,0 +1,14 @@
+4. What is Critical section, deadlocks, race around condition are problems that happen
+in thread synchronization?
+
+       The critical section in a code segment where the shared variables can be accessed.
+    Atomic action is required in a critical section i.e. only one process can execute in its critical section at a time.
+    All the other processes have to wait to execute in their critical sections.
+    
+        Deadlock is a situation where a set of processes are blocked
+    because each process is holding a resource 
+    and waiting for another resource acquired by some other process. 
+    
+        Race conditions in software or any system occur 
+    when the desired output requires that certain events occur in a specific order 
+    but that the events don't always happen in that order 
