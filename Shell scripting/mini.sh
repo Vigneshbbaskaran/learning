@@ -18,5 +18,5 @@ fi
 echo "IP Address           : `hostname -i`\n"
 echo "Memory status\n"
 free
-echo "\nUptime                : `uptime -s`\n"
+echo "\nUptime                : `uptime -p`\n"
 
