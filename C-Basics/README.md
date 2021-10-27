@@ -1,3 +1,5 @@
+# 'C' Programming Basics
+
 ## 22nd FEB 2021
 ### C-Basics
 
@@ -503,6 +505,117 @@ array2 :  6 7 8 9 10
 after swapping output:   
 array1: 10 9 8 7 6  
 array2: 5 4 3 2 1  
+
+# 26 MARCH 2021
+## STRING
+
+1.Find String length  
+
+2.Perform String copy  
+
+3.String concatenation  
+
+4.String reverse  
+
+5.String Lower  
+
+6.String Upper  
+
+7.String comparison  
+
+8.string char search  
+
+## Pointers Assignments
+
+1)Write a program to take input for two character variables using pointers and find out and print which character has higher ascii value.  
+
+2)Write a program to find the biggest of three numbers using pointers that point to those numbers.  
+
+3)Take three input integers x,y and z. Write a program to rotate their values such that, x has the value of y,  
+y has the value of z and z has the value of x. Do this using pointers that point to x,y and z.  
+
+4) Declare an integer array of size 10 and initialize it to some values.   
+Print the addresses of each element of the array using a pointer. using indirection operator , print the value stored in each element of the array.  
+
+
+# 28 MARCH 2021
+## Strings Assignments
+1)Write a function that takes a string as an input, and count the number of words in the string, and returns the number,  
+
+2)Write a function that takes a string as input, and determines whether the string is a palindrome or not, returns 1 or 0.  
+
+3)Write a function to replace a given character by another character in a string. The function takes one string, and 2 characters as input.  
+
+4)WAP to display the word expansion of a number  
+eg., Input : 789  
+Output : Seven Eight Nine  
+
+5)Write a trim() function,that will remove the leading and trailing spaces from a string.  
+eg., Input : "    str  str   "  
+Output : "str str  
+
+6)Write a function called strstr that takes 2 strings as input,    
+finds the first occurrence of second string, in the first string,  
+and returns the index from where it starts in the first string. If the string is not found, returns -1.  
+  
+eg., Kernel Masters  
+	Mast  
+output : 7  
+
+
+# 30 MARCH 2021
+## Pointers Assignments
+
+1)Write a program to swap two numbers using Call by Value and Call by Reference.  
+
+2)Note down the differences between Call by Value and Call by Reference and when to use what.  
+
+3)Write a function that can take two integers as input,     
+and gives 5 outputs : addition, subtraction, multiplication, quotient and reminder of those two numbers. Print the outputs in the main function.  
+
+4)Write two source files, main.c and swap.c.   
+The main function initializes a two-element array of ints, and then calls the swap function to swap the pair.  
+
+5)WAP whether a architecture is Little Endian or Big Endian?  
+
+6)WAP copy 0x20 data in to 0x7800 memory location?  
+
+
+
+# 2ND APRIL 2021
+## MACROS
+1) Write down a macro to find out the biggest of two numbers.  
+MAX(x,y) should define code to find biggest of x and y.  
+
+2) Write down a macro to find the biggest of two numbers. Using this macro , implement array sorting.  
+
+3) Write a macro to find biggest of three numbers, using biggest of two numbers macro.  
+
+4) Implement calculator program using macros.   
+Write down your own header file ,where the calculator macros are defined(ADD,SUB,MUL,DIV).  
+
+5) WAP to print if  a character is alphanumeric , using macros.  
+
+6) WAP to print if a year is leap year or not. Modify the date validation program using this.  
+
+7) WAP to print a range of prime numbers. Use macro,to find if a number is prime or not.  
+
+8) Write a macro to print the biggest of three values.   
+Try to call it and print the result for different data types, integer, float, double and character.  
+
+9) Define  a macro that receives an array and the number of elements in the array as arguments.   
+Write a program using this macro to print out the elements of an array.  
+
+10) Using the above macro, write a program to compute the sum of all elements in an array.  
+
+11) Write a generic function to swap 2 numbers using macros, and use it for different data types.  
+
+12)  Need to display different welcome messages depending on the operating system.  
+for WINDOWS : Microsoft Windows Welcomes you  
+for Linux : Linux Welcomes you  
+for Mac : Mac Welcomes you  
+
+
 
 
         
