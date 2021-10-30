@@ -1,4 +1,4 @@
-## LOOPS-1 assignment
+## LOOPS-1 assignment  
 
 1) Write a program to input n numbers and print the largest and smallest numbers out of them.  
 Eg., 3,23,56,34,78,45,26,90,68,77  
@@ -13,56 +13,50 @@ Smallest Number is 3
     * * *  
     * * * *  
     * * * * *  
-
-4)  
+4)    
    1  
    2 2  
    3 3 3  
    4 4 4 4  
    5 5 5 5 5  
-
-5)  
+5)    
   1  
   1 2  
   1 2 3  
   1 2 3 4  
   1 2 3 4 5  
-  
-6)  
+6)     
   1  
   0 1  
   1 0 1  
   0 1 0 1  
   1 0 1 0 1  
-  
-7)  
+7)    
   5  
   4 4  
   3 3 3  
   2 2 2 2  
   1 1 1 1 1  
-  
-8)  
+8)    
   5  
   5 4  
   5 4 3  
   5 4 3 2  
   5 4 3 2 1  
-  
-9)  
+9)    
   1  
   2    3  
   4    5   6  
   7    8   9    10  
   11   12  13   14  15  
   
-10) without using nested loops( Using only 1 loop)  
+10)without using nested loops( Using only 1 loop)  
+ 
     *  
     * *  
     * * *  
     * * * *  
-    * * * * *  
-  
+    * * * * *   
 11) Write a program to input a number and count the digits in it.  
 Eg.   
 0 - number of digits 1  
