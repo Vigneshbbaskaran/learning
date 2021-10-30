@@ -1,49 +1,55 @@
 ## LOOPS-1 assignment  
 
-1) Write a program to input n numbers and print the largest and smallest numbers out of them.  
+1)Write a program to input n numbers and print the largest and smallest numbers out of them.  
 Eg., 3,23,56,34,78,45,26,90,68,77  
 Biggest Number is 90  
 Smallest Number is 3  
    
-2) Write a program to find out if an integer entered by a user is a prime number or not.  
+2)Write a program to find out if an integer entered by a user is a prime number or not.  
 
 3)using while ,do while and for loops     
     *  
     * *  
     * * *  
     * * * *  
-    * * * * *  
-4)    
+    * * * * *
+
+4 )   
    1  
    2 2  
    3 3 3  
    4 4 4 4  
    5 5 5 5 5    
-5)    
+
+5 )  
   1  
   1 2  
   1 2 3  
   1 2 3 4  
   1 2 3 4 5    
-6)       
+
+6 )      
   1  
   0 1  
   1 0 1  
   0 1 0 1  
   1 0 1 0 1      
-7)      
+
+7 )     
   5  
   4 4  
   3 3 3  
   2 2 2 2  
   1 1 1 1 1    
-8)    
+
+8 )   
   5  
   5 4  
   5 4 3  
   5 4 3 2  
   5 4 3 2 1    
-9)    
+
+9 )   
   1  
   2    3  
   4    5   6  
