@@ -3,7 +3,7 @@ An ATM gives money in denominations of 2000,500, 200, 100 & 50/- . Given an amou
 
 ***input*** : 22350
 
-***output*** : 
+***output*** :   
          2000/- notes: 11  
          500/- notes: 0  
          200/- notes: 1  
