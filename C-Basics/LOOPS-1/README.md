@@ -76,7 +76,6 @@ Eg.
 15) Write a program to find out if an integer entered by a user is a prime number or not using break statement.  
 
 16) "Write a program to print the first n Fibonacci numbers.  
- 
 Eg., First 8 Fibonacci numbers are :  
 1  1  2  3  5  8  13  21 "  
   
