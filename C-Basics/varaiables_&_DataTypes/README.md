@@ -8,7 +8,7 @@ Hint : Find how you can convert a digital character to its equivalent integer di
 ***3)*** Read a 4 digit number and print it in the below format witout using any operators (use escape sequences).  
 input : 4534  
 
-output :
+output :  
          4  
          45  
          453  
