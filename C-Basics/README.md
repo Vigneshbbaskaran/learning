@@ -11,26 +11,26 @@ with and without -o option, and make some changes to code and generate error/war
 ## 23rd FEB 2021
 ### Variables input & output
 
-**1)** List out the data types, their format specifiers. 
+**1)**  List out the data types, their format specifiers. 
 
-**2)**try input and output on different variables,create variables and then formatted output and inputs, print some expressions with arithmetic operations 
+**2)**  try input and output on different variables,create variables and then formatted output and inputs, print some expressions with arithmetic operations 
 
-**3)**Calculation of simple interest.
+**3)**   Calculation of simple interest.
 
-**4)**calculate of average of 4 numbers & print.
+**4)**   calculate of average of 4 numbers & print.
 
-**5)**calculate area and perimeter of rectangle
+**5)**  calculate area and perimeter of rectangle
 
-**6)**calculate area and perimeter of square 
+**6)**  calculate area and perimeter of square 
 
-**7)**calculate area and perimeter of circle
+**7)**  calculate area and perimeter of circle
 
-**8)**If sales price and profit of n items is given find the cost price of 1 item.
+**8)**  If sales price and profit of n items is given find the cost price of 1 item.
 
 ## 24th FEB 2021
 ### Arithmetic operators
 
-**1)**"read a 4 digit number and print it in the following formats:  
+**1)**   "read a 4 digit number and print it in the following formats:  
 eg., 4532  
 **OP1:** 
 
@@ -61,23 +61,23 @@ eg., 4532
 4
 
 
-**2)** Write a program to swap the values of 2 numbers.   
+**2)**  Write a program to swap the values of 2 numbers.   
 *eg., a = 4 , b=5
 op: a=5 , b=4*
 
-**3)** Write a program to rotate the values in 3 variables.  
+**3)**  Write a program to rotate the values in 3 variables.  
 *eg., a=3, b=5 , c = 8
 OP: a =5, b = 8, c = 3*
 
 ## ASSIGNMENT QUESTION
 ### Variables & DataTypes 
-***1)***Read a character and print its ascii value, and vice versa.  
-***2)***Input 3 digits, read them into three different characters. Make one integer out of them and display.  
+***1)***   Read a character and print its ascii value, and vice versa.  
+***2)***   Input 3 digits, read them into three different characters. Make one integer out of them and display.  
 Eg., input 345. char c =‘3’,b=‘4’,d=‘5’.   
 Output : int i = 345.
 Hint : Find how you can convert a digital character to its equivalent integer digit and add its place value.  
 
-***3)***Read a 4 digit number and print it in the below format witout using any operators (use escape sequences).  
+***3)***   Read a 4 digit number and print it in the below format witout using any operators (use escape sequences).  
 input : 4534  
 
 output : 4  
@@ -100,14 +100,14 @@ An ATM gives money in denominations of 2000,500, 200, 100 & 50/- . Given an amou
 ## 26 FEB 2021
 ## Conditional Statements
 
-***1)***Write a program to find the biggest of 2 nmbers.
+***1)***   Write a program to find the biggest of 2 nmbers.
 input : -5 -9
 output : -5 is biggest
 
 input: 15 11
 output : 15 is biggest
 
-***2)*** Write a program to find if a given integer is even number or odd number.
+***2)***   Write a program to find if a given integer is even number or odd number.
 
 input : 5
 output: 5 is odd number
@@ -115,12 +115,12 @@ output: 5 is odd number
 input : 12
 output : 12 is even number
 
-***3)***Write a program to find the biggest of three numbers using if else statements.
+***3)***   Write a program to find the biggest of three numbers using if else statements.
 
 input : 6 7 3
 output : 7
 
-***4)C*** program to check whether a number is positive, negative or zero.
+***4)C***   program to check whether a number is positive, negative or zero.
 
 input : -7
 output : given number is negative
@@ -128,12 +128,12 @@ output : given number is negative
 input: 4
 output : given number is positive
 
-***5)***Write a program to find the biggest of four numbers.
+***5)***   Write a program to find the biggest of four numbers.
 
 input : 1 1 5 -18
 output : 5
 
-***6)***Write a calculator program that takes two integer numbers from user, and one of the operands +,-,* and / as a character and prints the appropriate result using if else.
+***6)***   Write a calculator program that takes two integer numbers from user, and one of the operands +,-,* and / as a character and prints the appropriate result using if else.
 
 eg., input : 3 + 4
 output : 7
@@ -144,7 +144,7 @@ output : 2
 input: 5% 2
 output: 1
 
-***7)***Find the power bill for the input number of units :  
+***7)***   Find the power bill for the input number of units :  
 0 - 200 units : 100/- min  
 201 - 400 units : 100 + 0.65 per unit excess of 200  
 401 - 600 units : 230 + 0.80 per unit excess of 400  
@@ -153,7 +153,7 @@ output: 1
 input : number of units : 225
 output : 116.25 /-
 
-***8)***Find the % of marks for 6 subjects, for a student, and print the grade of the student as per below division , using if else statement.  
+***8)***   Find the % of marks for 6 subjects, for a student, and print the grade of the student as per below division , using if else statement.  
 80 - 100        : Honours  
 60 - 79         : First Division  
 50 - 59         : Second Division  
@@ -165,12 +165,12 @@ Grade : First Division
 
 ## 1st MARCH 2021
 ## LOGICAL STATEMENTS
-***1)***Write a Program to check if a character is vowel or not  
-***2)***check if a character is alphabet or not  
-***3)***Take an integer as input and print its magnitude (remove sign).  
-***4)***check if an year is leap year or not.  
-***5)***Input an alphabet. Output its case reverse.  
-***6)***Write a program to read 2 dates (day, month & year of 2 dates) ,and compare them and print which date is older.  
+***1)***   Write a Program to check if a character is vowel or not  
+***2)***   check if a character is alphabet or not  
+***3)***   Take an integer as input and print its magnitude (remove sign).  
+***4)***   check if an year is leap year or not.  
+***5)***   Input an alphabet. Output its case reverse.  
+***6)***   Write a program to read 2 dates (day, month & year of 2 dates) ,and compare them and print which date is older.  
 eg., input date 1:  3-3-2000  
 input date 2: 2-3-2000  
 output: 2-3-2000 is older date  
@@ -180,31 +180,31 @@ output: 2-3-2000 is older date
 # Conditional Operator assignments
 
 
-***1***	Write a program to find the biggest of two numbers using conditional operator.  
-***2***	Write a program to find the biggest of three numbers using conditional operator.  
-***3***	Write a program that determines whether a given integer is odd or even and displays the appropriate message.  
-***4***	For one type of mobile service, if cost is 250/- upto 100 calls and 1.25/- for each call made over and above 100 calls. Write a program to read number of calls made and compute and print the bill.  
-***5***	Input an alphabet. Output its case reverse.  
-***6***	Take an integer as input and print its magnitude (remove sign).  
-***7***	check if a character is alphabet or not  
-***8***	check if a character is vowel or not  
-***9***	check if an year is leap year or not.  
+***1***	  Write a program to find the biggest of two numbers using conditional operator.  
+***2***	  Write a program to find the biggest of three numbers using conditional operator.  
+***3***	  Write a program that determines whether a given integer is odd or even and displays the appropriate message.  
+***4***	  For one type of mobile service, if cost is 250/- upto 100 calls and 1.25/- for each call made over and above 100 calls. Write a program to read number of calls made and compute and print the bill.  
+***5***	  Input an alphabet. Output its case reverse.  
+***6***	  Take an integer as input and print its magnitude (remove sign).  
+***7***	  check if a character is alphabet or not  
+***8***	  check if a character is vowel or not  
+***9***	  check if an year is leap year or not.  
 
 # 3rd MARCH 2021
 # Switch statement assignments
 
-***1)*** C program to check whether a character is vowel or consonant using switch statement.  
-***2)*** Write the calculator program using switch case statement.  
-***3)***"Convert the percentage marks program to print the grade of the student as per below division , using switch statement.  
+***1)***   C program to check whether a character is vowel or consonant using switch statement.  
+***2)***   Write the calculator program using switch case statement.  
+***3)***  "Convert the percentage marks program to print the grade of the student as per below division , using switch statement.  
 80 - 100        : Honours  
 60 - 79         : First Division  
 50 - 59         : Second Division  
 40 - 49         : Third Division  
 0 - 39          : Fail"  
-***4)*** C program to check whether a number is odd or even using switch statement  
-***5)*** C program to find biggest of two numbers using switch statement  
-***6)*** check if a character is vowel or not using switch statement  
-***7)*** check if a character is alphabet or not using switch statement.  
+***4)***   C program to check whether a number is odd or even using switch statement  
+***5)***   C program to find biggest of two numbers using switch statement  
+***6)***   check if a character is vowel or not using switch statement  
+***7)***   check if a character is alphabet or not using switch statement.  
 
 
 # 8 March 2021
@@ -240,34 +240,37 @@ output: 1024 (should be calculated in a repetitive product method)
 
 # 16 MARCH 2021
 ## LOOPS-1 assignment
-1)Write a program to input n numbers and print the largest and smallest numbers out of them.  
-  
+
+***1)***   Write a program to input n numbers and print the largest and smallest numbers out of them.    
 Eg., 3,23,56,34,78,45,26,90,68,77  
 Biggest Number is 90  
 Smallest Number is 3  
    
-2) Write a program to find out if an integer entered by a user is a prime number or not.  
-3)using while ,do while and for loops  
-    *  
-    * *  
-    * * *  
-    * * * *  
-    * * * * *  
-4)  
-1  
-2 2  
-3 3 3  
-4 4 4 4  
-5 5 5 5 5  
+***2)*** Write a program to find out if an integer entered by a user is a prime number or not.  
 
-5)  
+***3)***   using while ,do while and for loops  
+<dl>
+<dd>*</dd>     
+<dd>* *</dd>      
+<dd>* * *</dd>       
+<dd>* * * *</dd>        
+<dd>* * * * *</dd>        
+</dl>
+***4)***  
+<dl>1 </dd> 
+<dd>2 2  </dd>
+<dd>3 3 3  </dd>
+<dd>4 4 4 4  </dd>
+<dd>5 5 5 5 5  </dd>
+</dl>
+***5)***     
 1  
 1 2  
 1 2 3  
 1 2 3 4  
 1 2 3 4 5  
   
-6)  
+***6)***     
 1  
 0 1  
 1 0 1  
